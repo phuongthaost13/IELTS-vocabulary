@@ -1,0 +1,5337 @@
+1
+ms
+426
+bệnh đa xơ cứng
+2
+questions
+368
+câu hỏi
+3
+â
+339
+4
+refer
+286
+tham khảo
+5
+test
+283
+kiểm tra
+6
+mail
+269
+thư
+7
+page
+250
+trang
+8
+pm
+234
+buổi chiều
+9
+business
+206
+kinh doanh
+10
+time
+196
+thời gian
+11
+answer
+172
+bài giải
+12
+company
+164
+Công ty
+13
+date
+159
+ngày
+14
+office
+158
+văn phòng
+15
+web
+156
+web
+16
+meeting
+145
+cuộc họp
+17
+information
+141
+thông tin
+18
+service
+140
+Dịch vụ
+19
+staff
+136
+Nhân Viên
+20
+site
+128
+Địa điểm
+21
+online
+116
+Trực tuyến
+22
+article
+108
+bài báo
+23
+employees
+106
+người lao động
+24
+letter
+106
+thư
+25
+dear
+105
+Thân mến
+26
+contact
+99
+tiếp xúc
+27
+event
+98
+Sự kiện
+28
+customer
+97
+khách hàng
+29
+building
+94
+Tòa nhà
+30
+schedule
+93
+lịch trình
+31
+city
+90
+thành phố
+32
+text
+89
+chữ
+33
+job
+88
+Công việc
+34
+subject
+88
+chủ thể
+35
+product
+81
+sản phẩm
+36
+complete
+78
+hoàn thành
+37
+line
+78
+hàng
+38
+project
+78
+dự án
+39
+store
+78
+cửa hàng
+40
+team
+78
+đội
+41
+conference
+77
+hội nghị
+42
+week
+77
+tuần
+43
+customers
+74
+khách hàng
+44
+items
+73
+mặt hàng
+45
+sentence
+73
+câu
+46
+june
+72
+tháng Sáu
+47
+receive
+72
+nhận
+48
+send
+72
+gửi
+49
+item
+71
+bài báo
+50
+mark
+71
+dấu
+5
+test
+283
+kiểm tra
+6
+mail
+269
+thư
+7
+page
+250
+trang
+8
+pm
+234
+buổi chiều
+9
+business
+206
+kinh doanh
+10
+time
+196
+thời gian
+11
+answer
+172
+bài giải
+12
+company
+164
+Công ty
+13
+date
+159
+ngày
+14
+office
+158
+văn phòng
+15
+web
+156
+web
+16
+meeting
+145
+cuộc họp
+17
+information
+141
+thông tin
+18
+service
+140
+Dịch vụ
+19
+staff
+136
+Nhân Viên
+20
+site
+128
+Địa điểm
+21
+online
+116
+Trực tuyến
+22
+article
+108
+bài báo
+23
+employees
+106
+người lao động
+24
+letter
+106
+thư
+25
+dear
+105
+Thân mến
+26
+contact
+99
+tiếp xúc
+27
+event
+98
+Sự kiện
+28
+customer
+97
+khách hàng
+29
+building
+94
+Tòa nhà
+30
+schedule
+93
+lịch trình
+31
+city
+90
+thành phố
+32
+text
+89
+chữ
+33
+job
+88
+Công việc
+34
+subject
+88
+chủ thể
+35
+product
+81
+sản phẩm
+36
+complete
+78
+hoàn thành
+37
+line
+78
+hàng
+38
+project
+78
+dự án
+39
+store
+78
+cửa hàng
+40
+team
+78
+đội
+41
+conference
+77
+hội nghị
+42
+week
+77
+tuần
+43
+customers
+74
+khách hàng
+44
+items
+73
+mặt hàng
+45
+sentence
+73
+câu
+46
+june
+72
+tháng Sáu
+47
+receive
+72
+nhận
+48
+send
+72
+gửi
+49
+item
+71
+bài báo
+50
+mark
+71
+dấu
+51
+form
+70
+mẫu đơn
+52
+products
+70
+Mỹ phẩm
+53
+local
+69
+địa phương
+54
+sheet
+69
+tờ giấy
+55
+suggested
+69
+gợi ý
+56
+training
+68
+đào tạo
+57
+request
+67
+lời yêu cầu
+58
+sales
+67
+việc bán hàng
+59
+april
+66
+tháng tư
+60
+department
+66
+phòng
+61
+directions
+66
+hướng
+62
+month
+66
+tháng
+63
+hotel
+65
+khách sạn
+64
+home
+64
+Trang Chủ
+65
+recently
+64
+gần đây
+66
+space
+64
+không gian
+67
+manager
+63
+người quản lý
+68
+word
+63
+từ
+69
+book
+62
+sách
+70
+restaurant
+62
+quán ăn
+71
+street
+62
+đường phố
+72
+day
+61
+ngày
+73
+reading
+61
+đọc hiểu
+74
+offer
+60
+phục vụ
+75
+travel
+60
+du lịch
+76
+purchase
+59
+mua
+77
+texts
+59
+văn bản
+78
+november
+58
+tháng Mười Một
+79
+select
+58
+lựa chọn
+80
+set
+58
+bộ
+81
+food
+57
+đồ ăn
+82
+include
+56
+bao gồm
+83
+provide
+56
+cung cấp
+84
+review
+56
+ôn tập
+85
+position
+55
+Chức vụ
+86
+visit
+55
+chuyến thăm
+87
+people
+54
+Mọi người
+88
+read
+54
+đọc
+89
+system
+54
+hệ thống
+90
+design
+53
+thiết kế
+91
+free
+53
+miễn phí
+92
+march
+53
+tháng Ba
+93
+report
+52
+bản báo cáo
+94
+park
+51
+công viên
+95
+price
+51
+giá bán
+96
+additional
+49
+thêm vào
+97
+attend
+49
+tham dự
+98
+hours
+49
+giờ
+99
+check
+48
+đánh dấu
+100
+experience
+48
+kinh nghiệm
+77
+texts
+59
+văn bản
+78
+november
+58
+tháng Mười Một
+79
+select
+58
+lựa chọn
+80
+set
+58
+bộ
+81
+food
+57
+đồ ăn
+82
+include
+56
+bao gồm
+83
+provide
+56
+cung cấp
+84
+review
+56
+ôn tập
+85
+position
+55
+Chức vụ
+86
+visit
+55
+chuyến thăm
+87
+people
+54
+Mọi người
+88
+read
+54
+đọc
+89
+system
+54
+hệ thống
+90
+design
+53
+thiết kế
+91
+free
+53
+miễn phí
+92
+march
+53
+tháng Ba
+93
+report
+52
+bản báo cáo
+94
+park
+51
+công viên
+95
+price
+51
+giá bán
+96
+additional
+49
+thêm vào
+97
+attend
+49
+tham dự
+98
+hours
+49
+giờ
+99
+check
+48
+đánh dấu
+100
+experience
+48
+kinh nghiệm
+101
+location
+48
+vị trí
+102
+marketing
+48
+tiếp thị
+103
+program
+48
+chương trình
+104
+received
+48
+nhận
+105
+meet
+47
+gặp nhau
+106
+notice
+47
+lưu ý
+107
+call
+46
+gọi
+108
+delivery
+46
+chuyển
+109
+friday
+46
+thứ sáu
+110
+plan
+46
+kế hoạch
+111
+positions
+46
+chức vụ
+112
+center
+45
+Trung tâm
+113
+community
+45
+cộng đồng
+114
+located
+45
+nằm
+115
+purpose
+45
+mục đích
+116
+sincerely
+45
+Trân trọng
+117
+software
+45
+phần mềm
+118
+train
+45
+tàu hỏa
+119
+director
+44
+giám đốc
+120
+july
+44
+tháng Bảy
+121
+management
+44
+ban quản lý
+122
+scheduled
+44
+lên kế hoạch
+123
+september
+44
+tháng 9
+124
+services
+44
+dịch vụ
+125
+details
+43
+thông tin chi tiết
+126
+offers
+43
+đề nghị
+127
+cost
+42
+Giá cả
+128
+special
+42
+đặc biệt
+129
+water
+42
+nước
+130
+minutes
+41
+phút
+131
+october
+41
+Tháng Mười
+132
+purchased
+41
+đã mua
+133
+return
+41
+trở lại
+134
+tickets
+41
+vé
+135
+monday
+40
+thứ hai
+136
+parking
+40
+bãi đậu xe
+137
+question
+40
+câu hỏi
+138
+university
+40
+trường đại học
+139
+closest
+39
+gần nhất
+140
+days
+39
+ngày
+141
+news
+39
+Tin tức
+142
+ticket
+39
+vé
+143
+change
+38
+thay đổi
+144
+logo
+38
+Logo
+145
+message
+38
+thông điệp
+146
+missing
+38
+mất tích
+147
+recent
+38
+gần đây
+148
+required
+38
+yêu cầu
+149
+announce
+37
+thông báo
+150
+employee
+37
+Nhân viên
+151
+marked
+37
+đánh dấu
+152
+shipping
+37
+Đang chuyển hàng
+153
+shop
+37
+cửa tiệm
+154
+variety
+37
+đa dạng
+155
+advertising
+36
+Quảng cáo
+156
+development
+36
+sự phát triển
+157
+discount
+36
+chiết khấu
+158
+materials
+36
+vật liệu
+159
+meaning
+36
+Ý nghĩa
+160
+public
+36
+công cộng
+161
+submit
+36
+Gửi đi
+162
+computer
+35
+máy vi tính
+163
+firm
+35
+chắc chắn
+164
+follow
+35
+theo dõi
+165
+morning
+35
+buổi sáng
+166
+paragraph
+35
+đoạn văn
+167
+past
+35
+quá khứ
+168
+saturday
+35
+Thứ bảy
+169
+trip
+35
+chuyến đi chơi
+170
+type
+35
+kiểu
+171
+august
+34
+đáng kính trọng
+172
+class
+34
+lớp
+173
+clients
+34
+khách hàng
+174
+completed
+34
+hoàn thành
+175
+equipment
+34
+Trang thiết bị
+176
+events
+34
+sự kiện
+177
+february
+34
+Tháng hai
+178
+forward
+34
+phía trước
+179
+january
+34
+Tháng một
+180
+phone
+34
+điện thoại
+181
+presentation
+34
+bài thuyết trình
+182
+addition
+33
+thêm vào
+183
+belong
+33
+thuộc về
+184
+bus
+33
+xe buýt
+185
+choices
+33
+sự lựa chọn
+186
+current
+33
+hiện hành
+187
+financial
+33
+tài chính
+188
+maintenance
+33
+Sự bảo trì
+189
+months
+33
+tháng
+190
+note
+33
+Ghi chú
+191
+phrase
+33
+cụm từ
+192
+prices
+33
+giá cả
+193
+quality
+33
+chất lượng
+194
+TRUE
+33
+THẬT
+195
+company's
+32
+của công ty
+196
+resources
+32
+tài nguyên
+197
+size
+32
+kích thước
+198
+visitors
+32
+khách
+199
+writes
+32
+viết
+200
+advertisement
+31
+Quảng cáo
+147
+recent
+38
+gần đây
+148
+required
+38
+yêu cầu
+149
+announce
+37
+thông báo
+150
+employee
+37
+Nhân viên
+151
+marked
+37
+đánh dấu
+152
+shipping
+37
+Đang chuyển hàng
+153
+shop
+37
+cửa tiệm
+154
+variety
+37
+đa dạng
+155
+advertising
+36
+Quảng cáo
+156
+development
+36
+sự phát triển
+157
+discount
+36
+chiết khấu
+158
+materials
+36
+vật liệu
+159
+meaning
+36
+Ý nghĩa
+160
+public
+36
+công cộng
+161
+submit
+36
+Gửi đi
+162
+computer
+35
+máy vi tính
+163
+firm
+35
+chắc chắn
+164
+follow
+35
+theo dõi
+165
+morning
+35
+buổi sáng
+166
+paragraph
+35
+đoạn văn
+167
+past
+35
+quá khứ
+168
+saturday
+35
+Thứ bảy
+169
+trip
+35
+chuyến đi chơi
+170
+type
+35
+kiểu
+171
+august
+34
+đáng kính trọng
+172
+class
+34
+lớp
+173
+clients
+34
+khách hàng
+174
+completed
+34
+hoàn thành
+175
+equipment
+34
+Trang thiết bị
+176
+events
+34
+sự kiện
+177
+february
+34
+Tháng hai
+178
+forward
+34
+phía trước
+179
+january
+34
+Tháng một
+180
+phone
+34
+điện thoại
+181
+presentation
+34
+bài thuyết trình
+182
+addition
+33
+thêm vào
+183
+belong
+33
+thuộc về
+184
+bus
+33
+xe buýt
+185
+choices
+33
+sự lựa chọn
+186
+current
+33
+hiện hành
+187
+financial
+33
+tài chính
+188
+maintenance
+33
+Sự bảo trì
+189
+months
+33
+tháng
+190
+note
+33
+Ghi chú
+191
+phrase
+33
+cụm từ
+192
+prices
+33
+giá cả
+193
+quality
+33
+chất lượng
+194
+TRUE
+33
+THẬT
+195
+company's
+32
+của công ty
+196
+resources
+32
+tài nguyên
+197
+size
+32
+kích thước
+198
+visitors
+32
+khách
+199
+writes
+32
+viết
+200
+advertisement
+31
+Quảng cáo
+201
+ago
+31
+trước kia
+202
+found
+31
+tìm
+203
+interview
+31
+buổi phỏng vấn
+204
+list
+31
+danh sách
+205
+mails
+31
+thư từ
+206
+offered
+31
+ngỏ ý
+207
+process
+31
+tiến trình
+208
+research
+31
+nghiên cứu
+209
+residents
+31
+cư dân
+210
+skills
+31
+kỹ năng
+211
+workshop
+31
+xưởng
+212
+answers
+30
+câu trả lời
+213
+arrive
+30
+đến
+214
+begin
+30
+bắt đầu
+215
+client
+30
+khách hàng
+216
+expected
+30
+kỳ vọng
+217
+features
+30
+Tính năng, đặc điểm
+218
+floor
+30
+sàn nhà
+219
+includes
+30
+bao gồm
+220
+library
+30
+thư viện
+221
+pleased
+30
+vừa lòng
+222
+support
+30
+ủng hộ
+223
+construction
+29
+sự thi công
+224
+due
+29
+quá hạn
+225
+held
+29
+đã tổ chức
+226
+hired
+29
+thuê
+227
+lunch
+29
+Bữa trưa
+228
+market
+29
+thị trường
+229
+property
+29
+bất động sản
+230
+station
+29
+trạm
+231
+survey
+29
+sự khảo sát
+232
+access
+28
+truy cập
+233
+account
+28
+tài khoản
+234
+annual
+28
+hàng năm
+235
+assistant
+28
+phụ tá
+236
+award
+28
+phần thưởng
+237
+cm
+28
+cm
+238
+color
+28
+màu sắc
+239
+companies
+28
+các công ty
+240
+discuss
+28
+bàn luận
+241
+hope
+28
+mong
+242
+limited
+28
+giới hạn
+243
+museum
+28
+bảo tàng
+244
+popular
+28
+phổ biến
+245
+production
+28
+sản xuất
+246
+sale
+28
+doanh thu
+247
+times
+28
+lần
+248
+address
+27
+Địa chỉ
+249
+budget
+27
+ngân sách
+250
+businesses
+27
+các doanh nghiệp
+195
+company's
+32
+của công ty
+196
+resources
+32
+tài nguyên
+197
+size
+32
+kích thước
+198
+visitors
+32
+khách
+199
+writes
+32
+viết
+200
+advertisement
+31
+Quảng cáo
+201
+ago
+31
+trước kia
+202
+found
+31
+tìm
+203
+interview
+31
+buổi phỏng vấn
+204
+list
+31
+danh sách
+205
+mails
+31
+thư từ
+206
+offered
+31
+ngỏ ý
+207
+process
+31
+tiến trình
+208
+research
+31
+nghiên cứu
+209
+residents
+31
+cư dân
+210
+skills
+31
+kỹ năng
+211
+workshop
+31
+xưởng
+212
+answers
+30
+câu trả lời
+213
+arrive
+30
+đến
+214
+begin
+30
+bắt đầu
+215
+client
+30
+khách hàng
+216
+expected
+30
+kỳ vọng
+217
+features
+30
+Tính năng, đặc điểm
+218
+floor
+30
+sàn nhà
+219
+includes
+30
+bao gồm
+220
+library
+30
+thư viện
+221
+pleased
+30
+vừa lòng
+222
+support
+30
+ủng hộ
+223
+construction
+29
+sự thi công
+224
+due
+29
+quá hạn
+225
+held
+29
+đã tổ chức
+226
+hired
+29
+thuê
+227
+lunch
+29
+Bữa trưa
+228
+market
+29
+thị trường
+229
+property
+29
+bất động sản
+230
+station
+29
+trạm
+231
+survey
+29
+sự khảo sát
+232
+access
+28
+truy cập
+233
+account
+28
+tài khoản
+234
+annual
+28
+hàng năm
+235
+assistant
+28
+phụ tá
+236
+award
+28
+phần thưởng
+237
+cm
+28
+cm
+238
+color
+28
+màu sắc
+239
+companies
+28
+các công ty
+240
+discuss
+28
+bàn luận
+241
+hope
+28
+mong
+242
+limited
+28
+giới hạn
+243
+museum
+28
+bảo tàng
+244
+popular
+28
+phổ biến
+245
+production
+28
+sản xuất
+246
+sale
+28
+doanh thu
+247
+times
+28
+lần
+248
+address
+27
+Địa chỉ
+249
+budget
+27
+ngân sách
+250
+businesses
+27
+các doanh nghiệp
+251
+called
+27
+gọi là
+252
+closed
+27
+đóng cửa
+253
+corporate
+27
+công ty
+254
+dr
+27
+NS
+255
+guest
+27
+khách
+256
+london
+27
+London
+257
+newspaper
+27
+báo chí
+258
+policy
+27
+chính sách
+259
+write
+27
+viết
+260
+advance
+26
+tiến bộ
+261
+based
+26
+dựa trên
+262
+care
+26
+quan tâm
+263
+confirm
+26
+xác nhận
+264
+corporation
+26
+tập đoàn
+265
+daily
+26
+hằng ngày
+266
+encouraged
+26
+động viên
+267
+facilities
+26
+cơ sở
+268
+final
+26
+cuối cùng
+269
+future
+26
+Tương lai
+270
+happy
+26
+sung sướng
+271
+http
+26
+http
+272
+increase
+26
+tăng
+273
+mall
+26
+Trung tâm mua sắm
+274
+meetings
+26
+các cuộc họp
+275
+music
+26
+Âm nhạc
+276
+opportunity
+26
+cơ hội
+277
+plans
+26
+các kế hoạch
+278
+president
+26
+chủ tịch
+279
+successful
+26
+thành công
+280
+summer
+26
+mùa hè
+281
+technology
+26
+Công nghệ
+282
+tour
+26
+chuyến du lịch
+283
+upcoming
+26
+sắp tới
+284
+__
+25
+__
+285
+art
+25
+nghệ thuật
+286
+attached
+25
+đính kèm
+287
+board
+25
+bảng
+288
+chef
+25
+bếp trưởng
+289
+choose
+25
+lựa chọn
+290
+clothing
+25
+quần áo
+291
+contract
+25
+hợp đồng
+292
+creative
+25
+sáng tạo
+293
+enjoy
+25
+vui thích
+294
+festival
+25
+ngày hội
+295
+human
+25
+Nhân loại
+296
+including
+25
+bao gồm
+297
+instructions
+25
+hướng dẫn
+298
+international
+25
+Quốc tế
+299
+learn
+25
+học
+300
+media
+25
+301
+medical
+25
+Y khoa
+302
+owners
+25
+những chủ sở hữu
+303
+participants
+25
+những người tham gia
+304
+percent
+25
+phần trăm
+305
+person
+25
+người
+306
+print
+25
+in
+307
+stay
+25
+ở lại
+308
+transportation
+25
+vận chuyển
+phương tiện truyền thông
+309
+updated
+25
+cập nhật
+310
+card
+24
+Thẻ
+311
+express
+24
+thể hiện
+312
+finish
+24
+kết thúc
+313
+professional
+24
+cao thủ
+314
+safety
+24
+sự an toàn
+315
+security
+24
+Bảo vệ
+316
+stores
+24
+cửa hàng
+317
+supplies
+24
+quân nhu
+318
+tuesday
+24
+Thứ ba
+319
+blue
+23
+màu xanh dương
+320
+car
+23
+xe ô tô
+321
+chat
+23
+trò chuyện
+322
+close
+23
+gần
+323
+desk
+23
+bàn
+324
+fee
+23
+phí
+325
+feedback
+23
+Phản hồi
+326
+glass
+23
+thủy tinh
+327
+health
+23
+Sức khỏe
+328
+original
+23
+nguyên bản
+329
+regular
+23
+thường xuyên
+330
+road
+23
+đường bộ
+331
+session
+23
+phiên họp
+332
+sign
+23
+ký tên
+333
+sold
+23
+đã bán
+334
+sponsor
+23
+tài trợ
+335
+suggest
+23
+gợi ý
+336
+units
+23
+các đơn vị
+337
+added
+22
+thêm
+338
+afternoon
+22
+buổi chiều
+339
+announced
+22
+công bố
+340
+cover
+22
+che
+341
+description
+22
+sự mô tả
+342
+discussion
+22
+thảo luận
+343
+employment
+22
+thuê người làm
+344
+engineering
+22
+kỹ thuật
+345
+flight
+22
+chuyến bay
+346
+green
+22
+màu xanh lá
+347
+guests
+22
+khách
+348
+history
+22
+Môn lịch sử
+349
+hour
+22
+giờ
+350
+industry
+22
+ngành công nghiệp
+351
+level
+22
+cấp độ
+352
+magazine
+22
+tạp chí
+353
+main
+22
+chủ chốt
+354
+messages
+22
+tin nhắn
+355
+paper
+22
+giấy
+356
+proposal
+22
+đề nghị
+357
+ready
+22
+Sẵn sàng
+358
+reservation
+22
+Dự phòng
+359
+sessions
+22
+phiên họp
+360
+south
+22
+miền Nam
+361
+start
+22
+bắt đầu
+362
+stop
+22
+ngừng lại
+363
+taking
+22
+đang lấy
+364
+total
+22
+toàn bộ
+365
+agenda
+21
+chương trình nghị sự
+366
+air
+21
+không khí
+367
+airport
+21
+sân bay
+368
+allowed
+21
+cho phép
+369
+apply
+21
+ứng dụng
+370
+bicycle
+21
+Xe đạp
+371
+box
+21
+hộp
+372
+charge
+21
+sạc điện
+373
+continue
+21
+tiếp tục
+374
+create
+21
+tạo ra
+375
+december
+21
+tháng 12
+376
+electronic
+21
+điện tử
+377
+entire
+21
+toàn bộ
+378
+excellent
+21
+thông minh
+379
+furniture
+21
+đồ nội thất
+380
+increased
+21
+tăng
+381
+issue
+21
+phát hành
+382
+left
+21
+bên trái
+383
+locations
+21
+địa điểm
+384
+opportunities
+21
+những cơ hội
+385
+posted
+21
+đã đăng
+386
+press
+21
+nhấn
+387
+printing
+21
+in ấn
+388
+quickly
+21
+Mau
+389
+selection
+21
+sự lựa chọn
+390
+tomorrow
+21
+ngày mai
+391
+top
+21
+đứng đầu
+392
+unit
+21
+đơn vị
+393
+wednesday
+21
+thứ Tư
+394
+attachment
+20
+tập tin đính kèm
+395
+black
+20
+màu đen
+396
+bring
+20
+mang đến
+397
+council
+20
+hội đồng
+398
+field
+20
+đồng ruộng
+399
+included
+20
+bao gồm
+400
+inform
+20
+báo
+353
+main
+22
+chủ chốt
+354
+messages
+22
+tin nhắn
+355
+paper
+22
+giấy
+356
+proposal
+22
+đề nghị
+357
+ready
+22
+Sẵn sàng
+358
+reservation
+22
+Dự phòng
+359
+sessions
+22
+phiên họp
+360
+south
+22
+miền Nam
+361
+start
+22
+bắt đầu
+362
+stop
+22
+ngừng lại
+363
+taking
+22
+đang lấy
+364
+total
+22
+toàn bộ
+365
+agenda
+21
+chương trình nghị sự
+366
+air
+21
+không khí
+367
+airport
+21
+sân bay
+368
+allowed
+21
+cho phép
+369
+apply
+21
+ứng dụng
+370
+bicycle
+21
+Xe đạp
+371
+box
+21
+hộp
+372
+charge
+21
+sạc điện
+373
+continue
+21
+tiếp tục
+374
+create
+21
+tạo ra
+375
+december
+21
+tháng 12
+376
+electronic
+21
+điện tử
+377
+entire
+21
+toàn bộ
+378
+excellent
+21
+thông minh
+379
+furniture
+21
+đồ nội thất
+380
+increased
+21
+tăng
+381
+issue
+21
+phát hành
+382
+left
+21
+bên trái
+383
+locations
+21
+địa điểm
+384
+opportunities
+21
+những cơ hội
+385
+posted
+21
+đã đăng
+386
+press
+21
+nhấn
+387
+printing
+21
+in ấn
+388
+quickly
+21
+Mau
+389
+selection
+21
+sự lựa chọn
+390
+tomorrow
+21
+ngày mai
+391
+top
+21
+đứng đầu
+392
+unit
+21
+đơn vị
+393
+wednesday
+21
+thứ Tư
+394
+attachment
+20
+tập tin đính kèm
+395
+black
+20
+màu đen
+396
+bring
+20
+mang đến
+397
+council
+20
+hội đồng
+398
+field
+20
+đồng ruộng
+399
+included
+20
+bao gồm
+400
+inform
+20
+báo
+401
+join
+20
+tham gia
+402
+leave
+20
+rời bỏ
+403
+lee
+20
+lee
+404
+options
+20
+tùy chọn
+405
+owner
+20
+chủ nhân
+406
+performance
+20
+màn biểu diễn
+407
+previous
+20
+Trước
+408
+restaurants
+20
+nhà hàng
+409
+results
+20
+kết quả
+410
+run
+20
+chạy
+411
+style
+20
+Phong cách
+412
+writing
+20
+viết
+413
+apparel
+19
+may mặc
+414
+degree
+19
+trình độ
+415
+designed
+19
+thiết kế
+416
+digital
+19
+kỹ thuật số
+417
+easy
+19
+dễ
+418
+ensure
+19
+chắc chắn
+419
+feature
+19
+đặc tính
+420
+instant
+19
+lập tức
+421
+invitation
+19
+lời mời
+422
+offering
+19
+chào bán
+423
+package
+19
+Bưu kiện
+424
+personal
+19
+cá nhân
+425
+photographs
+19
+những bức ảnh
+426
+printers
+19
+máy in
+427
+projects
+19
+dự án
+428
+students
+19
+sinh viên
+429
+success
+19
+sự thành công
+430
+supply
+19
+cung cấp
+431
+update
+19
+cập nhật
+432
+world
+19
+thế giới
+433
+agent
+18
+đại lý
+434
+application
+18
+ứng dụng
+435
+articles
+18
+bài viết
+436
+benefit
+18
+được hưởng lợi
+437
+campus
+18
+khuôn viên
+438
+chain
+18
+chuỗi
+439
+clean
+18
+dọn dẹp
+440
+copy
+18
+sao chép
+441
+dinner
+18
+bữa ăn tối
+442
+district
+18
+quận
+443
+editor
+18
+biên tập viên
+444
+enter
+18
+đi vào
+445
+family
+18
+gia đình
+446
+fashion
+18
+thời trang
+447
+featured
+18
+đặc sắc
+448
+focus
+18
+tiêu điểm
+449
+hiring
+18
+tuyển dụng
+450
+house
+18
+nhà ở
+411
+style
+20
+Phong cách
+412
+writing
+20
+viết
+413
+apparel
+19
+may mặc
+414
+degree
+19
+trình độ
+415
+designed
+19
+thiết kế
+416
+digital
+19
+kỹ thuật số
+417
+easy
+19
+dễ
+418
+ensure
+19
+chắc chắn
+419
+feature
+19
+đặc tính
+420
+instant
+19
+lập tức
+421
+invitation
+19
+lời mời
+422
+offering
+19
+chào bán
+423
+package
+19
+Bưu kiện
+424
+personal
+19
+cá nhân
+425
+photographs
+19
+những bức ảnh
+426
+printers
+19
+máy in
+427
+projects
+19
+dự án
+428
+students
+19
+sinh viên
+429
+success
+19
+sự thành công
+430
+supply
+19
+cung cấp
+431
+update
+19
+cập nhật
+432
+world
+19
+thế giới
+433
+agent
+18
+đại lý
+434
+application
+18
+ứng dụng
+435
+articles
+18
+bài viết
+436
+benefit
+18
+được hưởng lợi
+437
+campus
+18
+khuôn viên
+438
+chain
+18
+chuỗi
+439
+clean
+18
+dọn dẹp
+440
+copy
+18
+sao chép
+441
+dinner
+18
+bữa ăn tối
+442
+district
+18
+quận
+443
+editor
+18
+biên tập viên
+444
+enter
+18
+đi vào
+445
+family
+18
+gia đình
+446
+fashion
+18
+thời trang
+447
+featured
+18
+đặc sắc
+448
+focus
+18
+tiêu điểm
+449
+hiring
+18
+tuyển dụng
+450
+house
+18
+nhà ở
+451
+idea
+18
+ý kiến
+452
+industrial
+18
+công nghiệp
+453
+intended
+18
+dự định
+454
+kim
+18
+kim
+455
+lost
+18
+mất
+456
+memo
+18
+bản ghi nhớ
+457
+menu
+18
+thực đơn
+458
+planning
+18
+lập kế hoạch
+459
+radio
+18
+Đài
+460
+recommend
+18
+giới thiệu
+461
+repair
+18
+sửa
+462
+retail
+18
+bán lẻ
+463
+school
+18
+trường học
+464
+share
+18
+đăng lại
+465
+shopping
+18
+mua đồ
+466
+shuttle
+18
+đưa đón
+467
+strong
+18
+mạnh
+468
+workers
+18
+công nhân
+469
+___
+17
+___
+470
+accounting
+17
+kế toán
+471
+approved
+17
+đã được phê duyệt
+472
+arrived
+17
+đã đến
+473
+awards
+17
+giải thưởng
+474
+books
+17
+sách
+475
+brown
+17
+màu nâu
+476
+buildings
+17
+các tòa nhà
+477
+cafe
+17
+quán cà phê
+478
+classes
+17
+các lớp học
+479
+concerns
+17
+mối quan tâm
+480
+coupon
+17
+phiếu mua hàng
+481
+decided
+17
+quyết định
+482
+designs
+17
+kiểu dáng
+483
+evening
+17
+buổi tối
+484
+exhibition
+17
+triển lãm
+485
+jobs
+17
+việc làm
+486
+late
+17
+muộn
+487
+lot
+17
+nhiều
+488
+mentioned
+17
+đề cập
+489
+previously
+17
+trước đây
+490
+refund
+17
+Hoàn tiền
+491
+regularly
+17
+thường xuyên
+492
+release
+17
+phóng thích
+493
+responsible
+17
+chịu trách nhiệm
+494
+season
+17
+Mùa
+495
+separate
+17
+riêng rẽ
+496
+social
+17
+xã hội
+497
+spaces
+17
+không gian
+498
+storage
+17
+kho
+499
+supervisor
+17
+người giám sát
+500
+thursday
+17
+Thứ năm
+451
+idea
+18
+ý kiến
+452
+industrial
+18
+công nghiệp
+453
+intended
+18
+dự định
+454
+kim
+18
+kim
+455
+lost
+18
+mất
+456
+memo
+18
+bản ghi nhớ
+457
+menu
+18
+thực đơn
+458
+planning
+18
+lập kế hoạch
+459
+radio
+18
+Đài
+460
+recommend
+18
+giới thiệu
+461
+repair
+18
+sửa
+462
+retail
+18
+bán lẻ
+463
+school
+18
+trường học
+464
+share
+18
+đăng lại
+465
+shopping
+18
+mua đồ
+466
+shuttle
+18
+đưa đón
+467
+strong
+18
+mạnh
+468
+workers
+18
+công nhân
+469
+___
+17
+___
+470
+accounting
+17
+kế toán
+471
+approved
+17
+đã được phê duyệt
+472
+arrived
+17
+đã đến
+473
+awards
+17
+giải thưởng
+474
+books
+17
+sách
+475
+brown
+17
+màu nâu
+476
+buildings
+17
+các tòa nhà
+477
+cafe
+17
+quán cà phê
+478
+classes
+17
+các lớp học
+479
+concerns
+17
+mối quan tâm
+480
+coupon
+17
+phiếu mua hàng
+481
+decided
+17
+quyết định
+482
+designs
+17
+kiểu dáng
+483
+evening
+17
+buổi tối
+484
+exhibition
+17
+triển lãm
+485
+jobs
+17
+việc làm
+486
+late
+17
+muộn
+487
+lot
+17
+nhiều
+488
+mentioned
+17
+đề cập
+489
+previously
+17
+trước đây
+490
+refund
+17
+Hoàn tiền
+491
+regularly
+17
+thường xuyên
+492
+release
+17
+phóng thích
+493
+responsible
+17
+chịu trách nhiệm
+494
+season
+17
+Mùa
+495
+separate
+17
+riêng rẽ
+496
+social
+17
+xã hội
+497
+spaces
+17
+không gian
+498
+storage
+17
+kho
+499
+supervisor
+17
+người giám sát
+500
+thursday
+17
+Thứ năm
+501
+traffic
+17
+giao thông
+502
+types
+17
+các loại
+503
+amount
+16
+số lượng
+504
+applicants
+16
+người nộp đơn
+505
+arrange
+16
+sắp xếp
+506
+artists
+16
+nghệ sĩ
+507
+avenue
+16
+đại lộ
+508
+bay
+16
+Vịnh
+509
+benefits
+16
+những lợi ích
+510
+children
+16
+bọn trẻ
+511
+code
+16
+mã số
+512
+coming
+16
+đang tới
+513
+division
+16
+phân công
+514
+downtown
+16
+Trung tâm thành phố
+515
+fine
+16
+tốt
+516
+fresh
+16
+mới
+517
+gardens
+16
+khu vườn
+518
+hall
+16
+đại sảnh
+519
+ideas
+16
+ý tưởng
+520
+images
+16
+hình ảnh
+521
+lead
+16
+chỉ huy
+522
+lj
+16
+lj
+523
+night
+16
+đêm
+524
+º
+16
+525
+paid
+16
+trả
+526
+pay
+16
+tiền lương
+527
+promote
+16
+khuyến khích
+528
+provided
+16
+cung cấp
+529
+range
+16
+phạm vi
+530
+representative
+16
+Tiêu biểu
+531
+requires
+16
+đòi hỏi
+532
+serve
+16
+phục vụ
+533
+specific
+16
+riêng
+534
+temporary
+16
+tạm thời
+535
+town
+16
+thị trấn
+536
+weeks
+16
+tuần
+537
+year's
+16
+năm
+538
+agency
+15
+hang
+539
+agreement
+15
+hợp đồng
+540
+arrangements
+15
+sự sắp xếp
+541
+attendees
+15
+người tham dự
+542
+bank
+15
+ngân hàng
+543
+ceo
+15
+CEO
+544
+created
+15
+tạo
+545
+east
+15
+phía đông
+546
+expensive
+15
+đắt tiền
+547
+explain
+15
+giải thích
+548
+factory
+15
+xưởng sản xuất
+549
+garden
+15
+sân vườn
+550
+growing
+15
+phát triển
+497
+spaces
+17
+không gian
+498
+storage
+17
+kho
+499
+supervisor
+17
+người giám sát
+500
+thursday
+17
+Thứ năm
+501
+traffic
+17
+giao thông
+502
+types
+17
+các loại
+503
+amount
+16
+số lượng
+504
+applicants
+16
+người nộp đơn
+505
+arrange
+16
+sắp xếp
+506
+artists
+16
+nghệ sĩ
+507
+avenue
+16
+đại lộ
+508
+bay
+16
+Vịnh
+509
+benefits
+16
+những lợi ích
+510
+children
+16
+bọn trẻ
+511
+code
+16
+mã số
+512
+coming
+16
+đang tới
+513
+division
+16
+phân công
+514
+downtown
+16
+Trung tâm thành phố
+515
+fine
+16
+tốt
+516
+fresh
+16
+mới
+517
+gardens
+16
+khu vườn
+518
+hall
+16
+đại sảnh
+519
+ideas
+16
+ý tưởng
+520
+images
+16
+hình ảnh
+521
+lead
+16
+chỉ huy
+522
+lj
+16
+lj
+523
+night
+16
+đêm
+524
+º
+16
+525
+paid
+16
+trả
+526
+pay
+16
+tiền lương
+527
+promote
+16
+khuyến khích
+528
+provided
+16
+cung cấp
+529
+range
+16
+phạm vi
+530
+representative
+16
+Tiêu biểu
+531
+requires
+16
+đòi hỏi
+532
+serve
+16
+phục vụ
+533
+specific
+16
+riêng
+534
+temporary
+16
+tạm thời
+535
+town
+16
+thị trấn
+536
+weeks
+16
+tuần
+537
+year's
+16
+năm
+538
+agency
+15
+hang
+539
+agreement
+15
+hợp đồng
+540
+arrangements
+15
+sự sắp xếp
+541
+attendees
+15
+người tham dự
+542
+bank
+15
+ngân hàng
+543
+ceo
+15
+CEO
+544
+created
+15
+tạo
+545
+east
+15
+phía đông
+546
+expensive
+15
+đắt tiền
+547
+explain
+15
+giải thích
+548
+factory
+15
+xưởng sản xuất
+549
+garden
+15
+sân vườn
+550
+growing
+15
+phát triển
+551
+headquarters
+15
+trụ sở chính
+552
+ideal
+15
+lý tưởng
+553
+inquire
+15
+hỏi thăm
+554
+internet
+15
+Internet
+555
+introduce
+15
+giới thiệu
+556
+invited
+15
+được mời
+557
+lease
+15
+cho thuê
+558
+listed
+15
+liệt kê
+559
+membership
+15
+thành viên
+560
+monthly
+15
+hàng tháng
+561
+move
+15
+di chuyển
+562
+photography
+15
+nhiếp ảnh
+563
+pieces
+15
+miếng
+564
+policies
+15
+chính sách
+565
+post
+15
+bài đăng
+566
+prepare
+15
+chuẩn bị
+567
+rent
+15
+thuê
+568
+rental
+15
+cho thuê
+569
+requested
+15
+yêu cầu
+570
+reserved
+15
+để dành
+571
+resume
+15
+bản tóm tắt
+572
+solutions
+15
+các giải pháp
+573
+square
+15
+Quảng trường
+574
+st
+15
+NS
+575
+started
+15
+đã bắt đầu
+576
+tech
+15
+công nghệ
+577
+trail
+15
+đường mòn
+578
+version
+15
+phiên bản
+579
+written
+15
+bằng văn bản
+580
+____
+14
+____
+581
+advertise
+14
+Quảng cáo
+582
+assist
+14
+hỗ trợ
+583
+attending
+14
+tham dự
+584
+author
+14
+tác giả
+585
+beautiful
+14
+xinh đẹp
+586
+beginning
+14
+bắt đầu
+587
+bright
+14
+sáng
+588
+career
+14
+nghề nghiệp
+589
+city's
+14
+thành phố
+590
+closing
+14
+đóng cửa
+591
+comments
+14
+bình luận
+592
+completion
+14
+hoàn thành
+593
+comprehension
+14
+bao quát
+594
+costs
+14
+chi phí
+595
+crew
+14
+phi hành đoàn
+596
+daniel
+14
+daniel
+597
+decision
+14
+phán quyết
+598
+desks
+14
+bàn làm việc
+599
+directly
+14
+trực tiếp
+600
+documents
+14
+các tài liệu
+557
+lease
+15
+cho thuê
+558
+listed
+15
+liệt kê
+559
+membership
+15
+thành viên
+560
+monthly
+15
+hàng tháng
+561
+move
+15
+di chuyển
+562
+photography
+15
+nhiếp ảnh
+563
+pieces
+15
+miếng
+564
+policies
+15
+chính sách
+565
+post
+15
+bài đăng
+566
+prepare
+15
+chuẩn bị
+567
+rent
+15
+thuê
+568
+rental
+15
+cho thuê
+569
+requested
+15
+yêu cầu
+570
+reserved
+15
+để dành
+571
+resume
+15
+bản tóm tắt
+572
+solutions
+15
+các giải pháp
+573
+square
+15
+Quảng trường
+574
+st
+15
+NS
+575
+started
+15
+đã bắt đầu
+576
+tech
+15
+công nghệ
+577
+trail
+15
+đường mòn
+578
+version
+15
+phiên bản
+579
+written
+15
+bằng văn bản
+580
+____
+14
+____
+581
+advertise
+14
+Quảng cáo
+582
+assist
+14
+hỗ trợ
+583
+attending
+14
+tham dự
+584
+author
+14
+tác giả
+585
+beautiful
+14
+xinh đẹp
+586
+beginning
+14
+bắt đầu
+587
+bright
+14
+sáng
+588
+career
+14
+nghề nghiệp
+589
+city's
+14
+thành phố
+590
+closing
+14
+đóng cửa
+591
+comments
+14
+bình luận
+592
+completion
+14
+hoàn thành
+593
+comprehension
+14
+bao quát
+594
+costs
+14
+chi phí
+595
+crew
+14
+phi hành đoàn
+596
+daniel
+14
+daniel
+597
+decision
+14
+phán quyết
+598
+desks
+14
+bàn làm việc
+599
+directly
+14
+trực tiếp
+600
+documents
+14
+các tài liệu
+601
+entrance
+14
+cổng vào
+602
+expanding
+14
+mở rộng
+603
+fair
+14
+công bằng
+604
+fit
+14
+Phù hợp
+605
+fund
+14
+quỹ
+606
+host
+14
+tổ chức
+607
+improve
+14
+cải thiện
+608
+ink
+14
+mực
+609
+instructors
+14
+người hướng dẫn
+610
+invoice
+14
+hóa đơn
+611
+kitchen
+14
+phòng bếp
+612
+led
+14
+dẫn đến
+613
+luggage
+14
+Hành lý
+614
+managers
+14
+những người quản lý
+615
+manufacturing
+14
+chế tạo
+616
+material
+14
+vật liệu
+617
+patients
+14
+người bệnh
+618
+photo
+14
+ảnh
+619
+power
+14
+sức mạnh
+620
+purchasing
+14
+thu mua
+621
+reception
+14
+thu nhận
+622
+replacement
+14
+thay thế
+623
+reservations
+14
+đặt chỗ trước
+624
+reviews
+14
+đánh giá
+625
+san
+14
+san
+626
+sentences
+14
+câu
+627
+served
+14
+phục vụ
+628
+stated
+14
+đã nêu
+629
+study
+14
+nghiên cứu
+630
+subscribers
+14
+người đăng ký
+631
+ten
+14
+mười
+632
+theatre
+14
+rạp hát
+633
+transport
+14
+vận chuyển
+634
+valley
+14
+thung lũng
+635
+venue
+14
+hội họp
+636
+wide
+14
+rộng
+637
+activities
+13
+các hoạt động
+638
+approval
+13
+sự chấp thuận
+639
+artwork
+13
+tác phẩm nghệ thuật
+640
+bear
+13
+chịu đựng
+641
+boxes
+13
+hộp
+642
+branch
+13
+chi nhánh
+643
+brochure
+13
+cuốn sách nhỏ
+644
+court
+13
+tòa án
+645
+creating
+13
+tạo ra
+646
+davis
+13
+davis
+647
+designer
+13
+nhà thiết kế
+648
+determine
+13
+quyết tâm
+649
+dining
+13
+ăn uống
+650
+document
+13
+tài liệu
+603
+fair
+14
+công bằng
+604
+fit
+14
+Phù hợp
+605
+fund
+14
+quỹ
+606
+host
+14
+tổ chức
+607
+improve
+14
+cải thiện
+608
+ink
+14
+mực
+609
+instructors
+14
+người hướng dẫn
+610
+invoice
+14
+hóa đơn
+611
+kitchen
+14
+phòng bếp
+612
+led
+14
+dẫn đến
+613
+luggage
+14
+Hành lý
+614
+managers
+14
+những người quản lý
+615
+manufacturing
+14
+chế tạo
+616
+material
+14
+vật liệu
+617
+patients
+14
+người bệnh
+618
+photo
+14
+ảnh
+619
+power
+14
+sức mạnh
+620
+purchasing
+14
+thu mua
+621
+reception
+14
+thu nhận
+622
+replacement
+14
+thay thế
+623
+reservations
+14
+đặt chỗ trước
+624
+reviews
+14
+đánh giá
+625
+san
+14
+san
+626
+sentences
+14
+câu
+627
+served
+14
+phục vụ
+628
+stated
+14
+đã nêu
+629
+study
+14
+nghiên cứu
+630
+subscribers
+14
+người đăng ký
+631
+ten
+14
+mười
+632
+theatre
+14
+rạp hát
+633
+transport
+14
+vận chuyển
+634
+valley
+14
+thung lũng
+635
+venue
+14
+hội họp
+636
+wide
+14
+rộng
+637
+activities
+13
+các hoạt động
+638
+approval
+13
+sự chấp thuận
+639
+artwork
+13
+tác phẩm nghệ thuật
+640
+bear
+13
+chịu đựng
+641
+boxes
+13
+hộp
+642
+branch
+13
+chi nhánh
+643
+brochure
+13
+cuốn sách nhỏ
+644
+court
+13
+tòa án
+645
+creating
+13
+tạo ra
+646
+davis
+13
+davis
+647
+designer
+13
+nhà thiết kế
+648
+determine
+13
+quyết tâm
+649
+dining
+13
+ăn uống
+650
+document
+13
+tài liệu
+651
+enclosed
+13
+gửi kèm
+652
+energy
+13
+năng lượng
+653
+finally
+13
+cuối cùng
+654
+gas
+13
+khí ga
+655
+government
+13
+chính quyền
+656
+hear
+13
+Nghe
+657
+installation
+13
+cài đặt
+658
+institute
+13
+học viện
+659
+interviews
+13
+phỏng vấn
+660
+jones
+13
+jones
+661
+la
+13
+la
+662
+light
+13
+soi rọi
+663
+mention
+13
+đề cập đến
+664
+multiple
+13
+nhiều
+665
+participate
+13
+tham dự
+666
+payment
+13
+thanh toán
+667
+programme
+13
+chương trình
+668
+proposed
+13
+đề xuất
+669
+rate
+13
+tỷ lệ
+670
+require
+13
+yêu cầu
+671
+reserve
+13
+dự trữ
+672
+result
+13
+kết quả
+673
+selected
+13
+đã chọn
+674
+sell
+13
+bán
+675
+selling
+13
+bán hàng
+676
+seminars
+13
+hội thảo
+677
+senior
+13
+cấp cao
+678
+shirts
+13
+Áo sơ mi
+679
+speak
+13
+nói
+680
+standing
+13
+đứng
+681
+submission
+13
+nộp hồ sơ
+682
+suggestions
+13
+gợi ý
+683
+taste
+13
+mùi vị
+684
+unique
+13
+duy nhất
+685
+white
+13
+trắng
+686
+workshops
+13
+hội thảo
+687
+yesterday
+13
+hôm qua
+688
+accepted
+12
+Đã được chấp nhận
+689
+appointment
+12
+cuộc hẹn
+690
+associate
+12
+kết hợp
+691
+campaign
+12
+chiến dịch
+692
+candidates
+12
+ứng cử viên
+693
+celebration
+12
+lễ ăn mừng
+694
+centerville
+12
+centerville
+695
+convenience
+12
+sự tiện lợi
+696
+convenient
+12
+thuận tiện
+697
+cooking
+12
+nấu nướng
+698
+courses
+12
+các khóa học
+699
+deadline
+12
+hạn chót
+700
+difficult
+12
+khó
+655
+government
+13
+chính quyền
+656
+hear
+13
+Nghe
+657
+installation
+13
+cài đặt
+658
+institute
+13
+học viện
+659
+interviews
+13
+phỏng vấn
+660
+jones
+13
+jones
+661
+la
+13
+la
+662
+light
+13
+soi rọi
+663
+mention
+13
+đề cập đến
+664
+multiple
+13
+nhiều
+665
+participate
+13
+tham dự
+666
+payment
+13
+thanh toán
+667
+programme
+13
+chương trình
+668
+proposed
+13
+đề xuất
+669
+rate
+13
+tỷ lệ
+670
+require
+13
+yêu cầu
+671
+reserve
+13
+dự trữ
+672
+result
+13
+kết quả
+673
+selected
+13
+đã chọn
+674
+sell
+13
+bán
+675
+selling
+13
+bán hàng
+676
+seminars
+13
+hội thảo
+677
+senior
+13
+cấp cao
+678
+shirts
+13
+Áo sơ mi
+679
+speak
+13
+nói
+680
+standing
+13
+đứng
+681
+submission
+13
+nộp hồ sơ
+682
+suggestions
+13
+gợi ý
+683
+taste
+13
+mùi vị
+684
+unique
+13
+duy nhất
+685
+white
+13
+trắng
+686
+workshops
+13
+hội thảo
+687
+yesterday
+13
+hôm qua
+688
+accepted
+12
+Đã được chấp nhận
+689
+appointment
+12
+cuộc hẹn
+690
+associate
+12
+kết hợp
+691
+campaign
+12
+chiến dịch
+692
+candidates
+12
+ứng cử viên
+693
+celebration
+12
+lễ ăn mừng
+694
+centerville
+12
+centerville
+695
+convenience
+12
+sự tiện lợi
+696
+convenient
+12
+thuận tiện
+697
+cooking
+12
+nấu nướng
+698
+courses
+12
+các khóa học
+699
+deadline
+12
+hạn chót
+700
+difficult
+12
+khó
+701
+dress
+12
+đầm
+702
+earlier
+12
+sớm hơn
+703
+effective
+12
+có hiệu lực
+704
+executive
+12
+chấp hành, quản lý
+705
+facility
+12
+cơ sở
+706
+film
+12
+phim ảnh
+707
+finance
+12
+tài chánh
+708
+forms
+12
+các hình thức
+709
+gallery
+12
+bộ sưu tập
+710
+game
+12
+trò chơi
+711
+gift
+12
+quà tặng
+712
+hold
+12
+tổ chức
+713
+industries
+12
+các ngành nghề
+714
+knowledge
+12
+hiểu biết
+715
+learning
+12
+học tập
+716
+morris
+12
+morris
+717
+motors
+12
+động cơ
+718
+moving
+12
+động
+719
+notes
+12
+ghi chú
+720
+offices
+12
+văn phòng
+721
+optieris
+12
+optieris
+722
+organization
+12
+tổ chức
+723
+password
+12
+mật khẩu mở khóa
+724
+planned
+12
+đã lên kế hoạch
+725
+potential
+12
+tiềm năng
+726
+publication
+12
+sự xuất bản
+727
+raising
+12
+nuôi nấng
+728
+region
+12
+khu vực
+729
+related
+12
+có liên quan
+730
+renovation
+12
+cải tạo
+731
+replaced
+12
+thay thế
+732
+returning
+12
+trở về
+733
+route
+12
+tuyến đường
+734
+shoe
+12
+giày
+735
+short
+12
+ngắn
+736
+significant
+12
+có ý nghĩa
+737
+star
+12
+ngôi sao
+738
+starting
+12
+bắt đầu
+739
+swimming
+12
+bơi lội
+740
+talk
+12
+nói chuyện
+741
+telephone
+12
+Điện thoại
+742
+topic
+12
+đề tài
+743
+transit
+12
+quá cảnh
+744
+traveling
+12
+đi du lịch
+745
+vice
+12
+hành vi xấu xa
+746
+visiting
+12
+thăm viếng
+747
+weather
+12
+thời tiết
+748
+writer
+12
+nhà văn
+749
+york
+12
+york
+750
+_j
+11
+_NS
+751
+activity
+11
+hoạt động
+752
+airlines
+11
+các hãng hàng không
+753
+arrival
+11
+đến
+754
+associates
+11
+cộng sự
+755
+association
+11
+sự kết hợp
+756
+bags
+11
+túi
+757
+beach
+11
+bờ biển
+758
+brand
+11
+nhãn hiệu
+759
+built
+11
+được xây dựng
+760
+carpets
+11
+những cái thảm
+761
+cars
+11
+ô tô
+762
+conducted
+11
+tiến hành
+763
+consulting
+11
+tư vấn
+764
+data
+11
+dữ liệu
+765
+delayed
+11
+trì hoãn
+766
+delivered
+11
+đã giao hàng
+767
+directors
+11
+đạo diễn
+768
+discussed
+11
+thảo luận
+769
+display
+11
+trưng bày
+770
+drive
+11
+lái xe
+771
+electronics
+11
+thiết bị điện tử
+772
+encourage
+11
+khuyến khích
+773
+environmental
+11
+thuộc về môi trường
+774
+expect
+11
+chờ đợi
+775
+extra
+11
+phụ
+776
+famous
+11
+nổi danh
+777
+feel
+11
+cảm xúc
+778
+finished
+11
+hoàn thành
+779
+frequent
+11
+thường xuyên
+780
+grand
+11
+lớn
+781
+hand
+11
+tay
+782
+handbook
+11
+sổ tay
+783
+hashimoto
+11
+hashimoto
+784
+iâ
+11
+tôi
+785
+ingredients
+11
+Thành phần
+786
+insurance
+11
+tiền bảo hiểm
+787
+internship
+11
+kỳ thực tập
+788
+invite
+11
+mời gọi
+789
+kilometers
+11
+cây số
+790
+leadership
+11
+Khả năng lãnh đạo
+791
+lobby
+11
+sảnh đợi
+792
+makes
+11
+làm cho
+793
+mayor
+11
+thị trưởng
+794
+meters
+11
+mét
+795
+mobile
+11
+di động
+796
+model
+11
+người mẫu
+797
+musical
+11
+âm nhạc
+798
+nearby
+11
+gần đây
+799
+noon
+11
+không bật
+800
+option
+11
+Lựa chọn
+801
+personnel
+11
+nhân viên
+802
+pick
+11
+nhặt
+803
+plant
+11
+cây
+804
+plastic
+11
+nhựa
+805
+prepared
+11
+chuẩn bị
+806
+prior
+11
+trước
+807
+produce
+11
+sản xuất
+808
+programs
+11
+chương trình
+809
+publishing
+11
+xuất bản
+810
+quarter
+11
+phần tư
+811
+recipes
+11
+công thức nấu ăn
+812
+residential
+11
+khu dân cư
+813
+samples
+11
+mẫu
+814
+sells
+11
+bán
+815
+shipment
+11
+chuyến hàng
+816
+signed
+11
+đã ký
+817
+sizes
+11
+kích thước
+818
+stock
+11
+Cổ phần
+819
+sunday
+11
+chủ nhật
+820
+television
+11
+vô tuyến
+821
+trade
+11
+buôn bán
+822
+unable
+11
+không thể
+823
+video
+11
+băng hình
+824
+view
+11
+quan điểm
+825
+weekend
+11
+ngày cuối tuần

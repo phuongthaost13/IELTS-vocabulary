@@ -1,0 +1,41 @@
+---
+title: "learnt"
+author: "Phạm Phương Thảo"
+date: "8/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Loại số ra khỏi văn bản text
+
+Thấy có nhiều cách, bao gồm cả Corpus nhưng xài chưa được.
+Tìm được một cách đơn giản hơn [ở đây](https://stackoverflow.com/questions/66857433/remove-numbers-from-string-in-dataframe-in-r).
+Nói thêm là anh trả lời câu hỏi này cũng ngàu vãi. 
+Follow linkedin và [stackoverflow](https://stackoverflow.com/users/3962914/ronak-shah) của ảnh.
+
+Một số keywords để đặt câu hỏi 
+
+- Remove numbers from string in dataframe in R
+
+- Remove numbers from alphanumeric characters 
+
+# Trump_tweets
+
+Có cái này để học text mining khá hay.
+
+```{r, eval=FALSE}
+load(url("https://cbail.github.io/Trump_Tweets.Rdata"))
+head(trumptweets$text)
+```
+
+# Cái dòng sau đây để làm lìn gì thì không biết
+
+```{r, eval=FALSE}
+packages <- c("wordcloud", "tm")
+lapply(packages, require , character.only = TRUE)
+```
+
+
