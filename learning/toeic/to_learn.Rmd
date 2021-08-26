@@ -1,0 +1,31 @@
+---
+title: "To learn"
+author: "Phạm Phương Thảo"
+date: "8/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Text mining
+
+https://cbail.github.io/SICSS_Basic_Text_Analysis.html 
+
+https://sicss.io/2020/materials/day3-text-analysis/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html
+
+https://cran.r-project.org/web/packages/corpus/vignettes/corpus.html
+
+[có chỉ cả wordcloud](https://dk81.github.io/dkmathstats_site/rtext-freq-words.html)
+
+# Writelines ()
+
+Sau khi bị lỗi về encoding thì mình phát hiện ra là R rất ngáo về vấn đề này.
+Thêm một điều nữa là có rất nhiều kiểu export dữ liệu. 
+Chẳng hạn hàm `writeLines()` chỉ được dùng để export dữ liệu dạng character vector, nhưng lại không bị lỗi liên quan đến encoding ngôn ngữ khác tiếng Anh.
+Do đó, cần tìm hiểu thêm về vấn đề này.
+Xem thêm [tại đây](https://stat.ethz.ch/R-manual/R-devel/library/base/html/writeLines.html).
+Ở phần cuối của bài viết có đề cập đến một số hàm cùng mục địch với `writeLines()`.
+
+#

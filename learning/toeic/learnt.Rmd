@@ -1,0 +1,69 @@
+---
+title: "learnt"
+author: "Phạm Phương Thảo"
+date: "8/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Loại số ra khỏi văn bản text
+
+Thấy có nhiều cách, bao gồm cả Corpus nhưng xài chưa được.
+Tìm được một cách đơn giản hơn [ở đây](https://stackoverflow.com/questions/66857433/remove-numbers-from-string-in-dataframe-in-r).
+Nói thêm là anh trả lời câu hỏi này cũng ngàu vãi. 
+Follow linkedin và [stackoverflow](https://stackoverflow.com/users/3962914/ronak-shah) của ảnh.
+
+Một số keywords để đặt câu hỏi 
+
+- Remove numbers from string in dataframe in R
+
+- Remove numbers from alphanumeric characters 
+
+# Trump_tweets
+
+Có cái này để học text mining khá hay.
+
+```{r, eval=FALSE}
+load(url("https://cbail.github.io/Trump_Tweets.Rdata"))
+head(trumptweets$text)
+```
+
+# Cái dòng sau đây để làm lìn gì thì không biết
+
+```{r, eval=FALSE}
+packages <- c("wordcloud", "tm")
+lapply(packages, require , character.only = TRUE)
+```
+
+# Loại bỏ việc phân biệt chữ hoa chữ thường (case sensitivity)
+
+Khi sử dụng các function liên quan đến `tidytext` thì nó sẽ tự động chuyển 
+tất cả thành chữ thường, vì package này dành cho text mining.
+Dó đó, khi 
+[đọc thêm ở đây](https://stackoverflow.com/questions/37339586/ignoring-case-sensitvity-in-dplyr-joins)
+
+# Chuyển hàng hoặc cột của dataframe thành character vector
+
+Dữ liệu đầu vào cho `writeLines()` là một character vector.
+Dữ liệu mình có lại ở dạng một dataframe nên mình phải sử dụng đến hàm `as.character()`:
+
+- Chuyển hàng: `as.character(df[tên hàng, ])
+
+- Chuyển cột: `as.character(df[ , tên cột])
+
+# Dùng hàm transpose `t()` để xoay dataframe
+
+# Sự khác biệt giữa `data.frame()` và `as.data.frame()`
+
+`as.data.frame()` biến bất kì **một R object** nào đó thành một dataframe.
+
+`data.frame()` lấy nhiều thành phần có cấu trúc giống nhau (ví dụ cùng số hàng) và ghép lại thành một dataframe.
+
+Đọc thêm [tại đây](https://stackoverflow.com/questions/21574250/difference-between-as-data-framex-and-data-framex/21574977)
+
+Do đó, khi muốn biến một matrix thành một dataframe, bạn nên dùng `as.data.frame()`.
+
+# 

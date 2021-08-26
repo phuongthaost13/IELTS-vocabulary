@@ -1,0 +1,62 @@
+---
+title: "Bugs"
+author: "Phạm Phương Thảo"
+date: "8/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE, warning=FALSE, error=FALSE}
+library(here)
+```
+
+# no lines available in input
+
+```{r, echo=FALSE, fig.cap="[Stackoverflow](https://stackoverflow.com/questions/50275240/r-read-delim-error-no-lines-available-in-input)", out.width="100%"} 
+knitr::include_graphics(here("figs", "no_lines_available_in_input.png"))
+```
+
+Thông thường lỗi này xuất hiện là do file mà bạn import không chứa dữ liệu hoặc
+do dữ liệu có vấn đề.
+Tuy nhiên, file dữ liệu của mình hoàn toàn ổn. Khi mình mở một project khác, 
+sử dụng code và dữ liệu y hệt thì lại không xảy ra lỗi.
+Minh giải quyết bằng cách là thoát hết các file đang được mở của project, sau đó
+mình thoát project rồi mở lại. Chạy bình thường.
+Mình muốn nói thêm về lí do tại sao mình không dùng cách này ngay từ ban đầu.
+Bởi vì mình dịch tự động có liên quan đến cái API nên khi đóng phiên làm việc của
+mình, object sẽ bị mất và mình phải tải lại. Lúc đó nó sẽ tính vào cái API của mình.
+
+# read.csv warning 'EOF within quoted string'
+
+Lỗi này xảy ra là do trong file dữ liệu của bạn có xuất hiện dấu `"`, tức R
+sẽ hiểu đây là bắt đầu của trích dẫn.
+Để giải quyết thì phải thiết lập `read.csv(quote = ""). 
+
+# R Error in scan: Line 1 did nothave X Elements 
+
+Lỗi này xảy ra do dữ liệu mà bạn đưa vào có một ô nào đấy bị khuyết dữ liệu.
+Giải quyết bằng cách thiết lập tham số `read.xxx(fill = TRUE)`. 
+
+Một trường hợp nữa mà mình gặp có liên quan đến tham số `quote`.
+Xem ví dụ sau đây:
+
+```{r, echo=FALSE}
+a <- c("d", "f", "g", "h")
+b <- c("w", "e", "na", "r")
+d <- c("p", "na", "na", "u, i")
+
+df <- data.frame(a, b, d)
+df
+```
+
+ở cột d, hàng 4, một ô có chứa tới hai chữ. 
+Trường hợp này đôi khi xảy ra do file dữ liệu gốc ban đầu mà bạn đưa vào bị lỗi ở đây. 
+Khi bạn thiết lập fill = TRUE thì vô tình, chỗ bị lỗi này sẽ chứa giá trị NA và máy không báo lỗi.
+Tuy nhiên, khi thực hiện các phân tích về sau, dữ liệu của bạn sẽ không hoạt động được.
+Trong trường hợp của mình thì lỗi xảy ra do có dấu `"` xuất hiện trong dữ liệu gốc của mình và R hiểu đầy là một quote và nó gom chung lại luôn.
+Mình phải set `quote = NULL` để giải quyết.
+
+

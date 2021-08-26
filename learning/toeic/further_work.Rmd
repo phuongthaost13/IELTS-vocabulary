@@ -1,0 +1,22 @@
+---
+title: "TOEIC Translation Project"
+author: "Phạm Phương Thảo"
+date: "8/23/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Cải tiến hơn cho `writeLines()`
+
+Hiện tại, vì lí do liên quan đến encoding ngôn ngữ tiếng Việt nên mình phải dùng `writeLines()` để xuất dữ liệu theo dạng character vector.
+Mỗi dòng lệnh `writeLines()` chỉ có thể xuất dữ liệu ở một cột của dataframe.
+Kết quả là mình xuất ra rất nhiều file và sau đó phải thực hiện thủ công việc ghép các file này lại thành một bảng hoàn chỉnh.
+Vì project hiện tại chỉ thực hiện trên dataframe với 3 cột và mình cần gấp cho người sử dụng nên vẫn miễn cưỡng làm thủ công được.
+Tuy nhiên, cần phải cải thiện điểm này, hoặc tìm cách sử dụng `writeLines()` mà vẫn có thể xuất dạng dataframe, 
+hoặc phải tìm một hàm export dữ liệu khác.
+
+# 
