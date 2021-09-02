@@ -1,0 +1,232 @@
+---
+title: "Working process"
+author: "Phạm Phương Thảo"
+date: "8/27/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 26082021: Ngày 1
+
+## Lọc chữ từ file pdf dạng hình ảnh
+
+**Background**
+
+Sau khi tìm kiếm đề IELTS Cambridge trên mạng thì mình chỉ có các bộ đề 1, 2, 3, 4, 11 là file pdf dạng chữ. 
+
+**Khó khăn**
+
+cần nhận diện chữ trong file pdf dạng hình ảnh
+
+**Giải quyết**
+
+- `pdftools::pdf_convert()`: chuyển các trang pdf thành file hình ảnh 
+
+- `magick::image_read()`: không rõ là đễ làm gì, có vẻ là ghép tất cả các hình ảnh lại với nhau
+
+- `tesseract::ocr()`: extract text from an image. 
+Lúc dúng thằng này theo hướng dẫn trên gg thì lại theo code như sau `txt <- map(imgs, ocr)`.
+Không rõ là tại sao lại dùng `map()` trong trường hợp này.
+
+## Trích xuất hình ảnh, lọc text tốn quá nhiều bộ nhớ và thời gian
+
+Trong `pdf_convert()` có tham số chỉnh **dpi** cho hình ảnh xuất ra. 
+Nếu hình ảnh từ file pdf gốc có độ nét không cao thì phải chỉnh dpi lớn và ngược lại. 
+Tuy nhiên, ở mức tối thiểu mà R có thể đọc được chữ, 80- 90 files hình ảnh thì tốn khoảng tầm 20Mbs.
+Quá trình trích xuất hình ảnh từ file pdf cũng diễn ra rất lâu. 
+Từ đó mình mới thấy việc làm việc với nhiều dữ liệu mà chậm cũng là một điểm yếu của R.
+Không biết vấn đề này có được cải thiện hơn nếu sử dụng Python?
+
+Lúc đầu, để có thể import đồng thời nhiều file .txt vào R, mình phải sử dụng `lapply()`.
+Cần phải có sử dụng `list.files(pattern = "*.txt").
+Đặc điểm của thằng `list.files()' đó là nó sử dụng working directory để tìm kiếm, hoặc nếu có ghi tên path file thì phải là full path. 
+Do đó, trước khi thực hiện mình phải setwd đến địa chỉ nơi chứa những file .txt mà mình muốn import vào.
+Vấn đề sẽ không có gì cho đến khi mình dùng `pdf_convert()` để xuất file hình ảnh từ pdf.
+Tất cả những file hình ảnh được xuất ra đều nằm tại working directory mà mình set lúc đầu.
+Từ đó mình mới biết được đặc điểm này.
+Nếu có sử dụng vòng lặp để auto việc xuất file hình ảnh từ nhiều file pdf thì mình nên thêm lệnh `setwd()` vào trong vòng lặp luôn.
+Ở đây `setwd()` sẽ được set đến địa chỉ mà mình muốn lưu các file hình ảnh.
+
+
+# 27082021: Ngày 2
+
+## Language detect (checking)
+
+**Background**
+
+Sau khi có dữ liệu về các từ, số lần xuất hiện trong bài thì mình hớn hở đi vẽ biểu đồ trực quan.
+Kết quả là mình phát hiện, trong số các cuốn Cam mình sử dụng cho phân tích (từ 10-15), tất cả các cuốn Cam khác đều có số lượng từ gần như xấp xỉ nhau (~3500 từ), chỉ duy có cuốn Cam 11 có số lượng từ lớn hơn rất nhiều (~5500 từ).
+Cam 11 là cuốn duy nhất trong số này là ở dạng file pdf chữ và chuyển trực tiếp sang text mà không cần qua bước hình ảnh.
+Mình nghĩ đó là lí do mà từ vựng được đọc chính xác hơn.
+
+**Khó khăn**
+
+Sau khi kiểm tra thì mình phát hiện là có rất nhiều từ trong file từ lọc được không có nghĩa. 
+Lí do là đọc từ hình ảnh nên đọc không chính xác.
+Mình nghĩ ra cách giải quyết là tìm công cụ kiểm tra ngôn ngữ, nếu là từ tiếng Anh thì giữ lại.
+
+**Giải quyết**
+
+Các package bao gồm: `cld2', 'cld3', 'textcat'
+
+Tuy nhiên, không hiệu quả vì nó không detect được cm gì hết.
+Sau này có thể xem lại cách này sau.
+
+## Sử dụng spelling check để loại các từ vô nghĩa
+
+**Background**
+
+Sau khi phương pháp language detect không hiệu quả thì mình dự định sẽ sử dụng một phương pháp mình nghĩ là độ chính xác không cao nhưng có thể loại bỏ được phần nào.
+Mình sẽ lọc tất cả các từ có độ dài từ lớn hơn một con số nào đó.
+Để xác định con số này, mình đã gg để tìm độ dài trung bình của từ tiếng Anh.
+Vô tình đọc được một câu trả lời trên [quora](https://www.quora.com/Whats-the-average-length-of-English-words) về spell check nên mình nghĩ biết đâu R cũng có công cụ để thực hiện và có thật
+
+
+## Loại bỏ dấu câu ra khỏi văn bản (remove punctuation marks from string)
+
+**Background**
+
+Có nhiều đoạn văn bản mà R đọc từ ảnh ra nó có dạng thế này `ta.la.thao.day.noi.m.nghe.v.do`.
+Vì viết dính liền thế này nên lúc lọc chữ, cả đoạn dài thòng như thế R xem như là 
+một từ luôn.
+
+**Giải quyết**
+
+- `gsub()`: gsub("[[:punct:]]", " ", <character vector>)
+
+- `stringi::stri_replace_all()`: 
+
+Sau khi kiểm tra thì sau đây là một số dạng dấu cần được loại bỏ: . .n wwwirLanguage __
+
+## Tại sao phải sử dụng do.call(rbind) thay vì rbind()
+
+Hiện tại thì người ta đã dùng dplyr::bind_rows
+
+# 28082021: Ngày 3
+
+## Sử dụng labs() để thêm title, subtitle cho plot, sử dụng theme() để tùy chỉnh định dạng cho các phần tử của ggplot
+
+cài đặt package `ggthemes` để sử dụng một số theme đã được tạo sẵn. [sthda](http://www.sthda.com/english/wiki/ggplot2-themes-and-background-colors-the-3-elements) có hưỡng dẫn tự tạo theme riêng cho mình.
+
+
+## Sự khác nhau
+
+https://stackoverflow.com/questions/46446485/calculating-string-similarity-as-a-percentage
+
+https://cran.r-project.org/web/packages/arsenal/vignettes/comparedf.html
+ 
+## Create custom theme for ggplot
+
+https://rpubs.com/mclaire19/ggplot2-custom-themes
+
+## Cách tổ chức khi phải thực hiện nhiều plot
+
+???
+
+Nếu phải thực hiện việc tạo biểu đồ nhiều lần thì nên làm trong cùng một file .R hay nên tách ra
+
+# 29082021: Ngày 4
+
+## Cách tạo bảng dữ liệu của mình không ổn
+
+Ngày hôm trước, bảng dữ liệu mà mình sử dụng trông như thế này:
+
+| source | sw_with_rep | sw_no_rep | total_with_rep | total_no_rep |
+|:------:|:-----------:|:---------:|:--------------:|:------------:|
+| cam 10 | 321         | 123       | 3210           | 1230         |
+| cam 11 | 654         | 456       | 6540           | 4560         |
+|        |             |           |                |              |
+
+Lỗi mình mắc phải ở đây chính là, cho mọi dữ liệu lên tiêu đề.
+Tức là mình có thể tạo một biến thay thể word_type trong đó bao gồm stopwords (sw) và normal words (nm).
+Và bảng dữ liệu của ngày hôm nay sẽ trông như sau:
+
+|   word   | freq | source | word_type |
+|:--------:|:----:|:------:|:---------:|
+|    the   | 2472 | cam 10 |     sw    |
+| question |  206 | cam 11 |     nm    |
+|          |      |        |           |
+
+
+## Học cách đặt tên cho cột 
+
+Có hai loại đặt tên: 
+
+1. Đặt tên cho cột mà mình không biết vị trị cụ thể của cột, chỉ biết tên cột.
+
+`library(data.table)`
+
+`setnames(df, old = c('a', 'x'), new = c('thao', 'kien'))`
+
+2. Đặt tên theo vị trí
+
+`names(df)[1:4] <- c('n1', 'n2', 'n3, 'thao')`
+
+## Lấy 75% hay 7.5 điểm :)) tổng số từ xuất hiện trong Cam 10 - 15
+
+Làm đến thời điểm này mình mới tìm được mục đích.
+Mục đích là làm sao cho số lượng từ mình phải học là ít nhất nhưng xác suất các từ đó xuất hiện trong bài thi IELTS là cao nhất. 
+
+Mình tìm được tỉ lệ của stopword xuất hiện (khoảng 14%), và 533 từ xuất hiện trong tất cả các cuốn từ Cambridge 10 - 15.
+Tính ra cả hai loại trên cộng lại cũng chỉ mới chiếm khoảng 29% tổng số lượng từ xuất hiện trong sách luyện IELTS Cambridge. 
+Như vậy là quá thấp.
+Giả sử mình muốn được 6.5 điểm.
+Vì mình không biết tính thế nào nên lại tiếp tục giả sử mình cần phải biết 75% tổng số lượng từ trong các sách Cambridge thì mới đạt được con số 6.5 điểm.
+Như vậy, ở đây, mình sẽ có 2 cách thực hiện:
+
+- Cách 1: lấy 75% của từng cuốn sau đó dùng `full_join()` để lọc lấy tất cả các từ xuất hiện.
+
+- Cách 2: Loại bỏ các duplicated values (`dplyr::disctinc()`), sau đó lấy 75% số từ. 
+
+Cách 2 dễ hơn.
+
+## Cách lấy 75% không thể thực hiện được
+Bởi vì R sẽ lấy 75% từ cao xuống thấy nhưng khi sắp xếp, chữ cái cũng được sắp xếp theo.
+Cũng vì vậy mà các chữ ở cuối bảng chữ cái sẽ vô tình không được lọc.
+Chính vì vậy mình nghĩ sẽ chuyển qua phương án khác:
+
+1. Lọc theo tiêu chí số lần xuất hiện của từ trong từng sách.
+Ví dụ, tiêu chí lọc sẽ là, từ phải xuất hiện ít nhất 3 lần trong bài.
+Sau đó dùng `full_join()` tìm tổng từ.
+
+2. Mình sẽ cộng dồn tất cả các lần xuất hiện của từ đó trong sách từ Cam 10 - 15, sau đó lọc theo tiêu chí số lần từ xuất hiện (ví dụ trung bình xuất hiện là 5 thì trong 6 cuốn sách sẽ xuất hiện 30 lần).
+Tuy nhiên, thằng này thì cũng sẽ có nhược điểm giống với lọc 75% như trên.
+
+## Cách thức chọn tiêu chí để lọc từ
+
+Mình không thể cứ mắt nhắm mắt mở mà chọn đại tiêu chí để lọc từ được.
+Trước hết phải đánh giá xem tần suất xuất hiện của các từ trong các cuốn sách như thế nào.
+
+Ví dụ, mình sẽ lập pie chart để xem cơ cấu phân bổ số lần xuất hiện. 
+Có thể xảy ra nhiều trường hợp như sau.
+Ví dụ, cuốn Cam 11 có tổng cộng 16000 ngàn từ và chia đều cho 4000 ngàn từ, mỗi từ xuất hiện 4 lần.
+Cuốn Cam 12, cũng có tổng cộng 16000 ngàn từ nhưng có một vài từ xuất hiện rất nhiều, và một số từ khác chỉ xuất hiện một lần.
+
+Giống như mean và standard deviation trong phân phối chuẩn.
+À vậy thì thực ra mình có cũng có thể lập một cái biểu đồ phân phối chuẩn thay cho pie chart.
+
+# 30082021: Ngày 04
+
+## Xác định binwidth cho histogram, hay xác định độ rộng cho cột của bar chart
+
+Khi kéo rộng đồ thị, độ cao nhìn sẽ ngắn lại và trông như các cột không khác nhau 
+là mấy.
+Từ điểm này mình mới nhớ đến chuyện, người ta có thể dùng đồ chị đã nói sai lệch
+về một vấn đề gì đó.
+Trong trường hợp này thì giống như mình tự đánh lạc hướng mình.
+Do đó mình phải tìm cách học phương pháp tính để xác định binwidth,
+xác định, giá trị của cột y sao cho đồ thị phản ánh đúng thực tế nhất.
+
+
+
+
+
+
+
+
+
+
+

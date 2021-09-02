@@ -1,0 +1,46 @@
+---
+title: "To-learn"
+author: "Phạm Phương Thảo"
+date: "8/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Liên quan đến subset
+
+https://mpn.metworx.com/packages/tibble/3.0.0/articles/wip/subset.html
+
+# Cái trang này dạy ggplot2 đẹp vãi tèo
+
+https://epirhandbook.com/ggplot-basics.html
+
+# Cryptographic Hashing in R
+
+Lúc mình có nghĩ đến việc mã hóa mấy cái chữ thì sẽ dễ visualization hơn.
+Nhưng mà chắc là k được.
+Nhưng mà nhờ đó mới biết là SHA1 k chỉ xài trong GIT mà ở đâu cũng xài được để mã hóa cả.
+
+https://cran.r-project.org/web/packages/openssl/vignettes/crypto_hashing.html
+
+# Một số trang về textmining khá hay
+
+https://www.tidytextmining.com/sentiment.html
+
+# tìm sự khác nhau
+
+# tìm sự khác nhau
+
+https://stackoverflow.com/questions/46446485/calculating-string-similarity-as-a-percentage
+
+https://cran.r-project.org/web/packages/arsenal/vignettes/comparedf.html
+  
+# Concatenating a list of data frames
+
+https://www.r-bloggers.com/2014/06/concatenating-a-list-of-data-frames/
+
+# Convert a list to df
+
+# Cách xác định bin width của histogram, xác định chia độ của trục y trong bar plot, v.v. Liên quan đến vấn đề sử dụng biểu đồ để lừa người

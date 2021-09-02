@@ -1,0 +1,37 @@
+---
+title: "Learnt"
+author: "Phạm Phương Thảo"
+date: "8/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Xóa các hàng chứa chuỗi kí tự
+
+[Delete rows containing specific strings in R](https://stackoverflow.com/questions/22249702/delete-rows-containing-specific-strings-in-r)
+
+# Loại bỏ các hàng có kí tự trùng lặp
+
+# Thêm một cột mới vào một dataframe
+
+# Gom hai chuỗi lại thành một
+
+sử dụng `paste()` hoặc `paste0()`.
+Sự khác biệt giữa 2 tk này???
+
+# write hay read multiple file .xxx vào R
+
+https://statisticsglobe.com/r-write-read-multiple-csv-files-for-loop
+
+https://stackoverflow.com/questions/11433432/how-to-import-multiple-csv-files-at-once
+
+# đặt lại tên cho tên của một col trong df
+
+colnames(df)[2] <- "newname"
+
+Một kinh nghiệm học được đó là trước khi dùng loop, nên thử trước,
+hoạt động rồi thì mới lặp.
+Để lỡ có chuyện gì xảy ra thì đỡ đứng máy

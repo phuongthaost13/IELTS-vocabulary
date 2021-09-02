@@ -1,0 +1,44 @@
+---
+title: "Bugs"
+author: "Phạm Phương Thảo"
+date: "8/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# File path issues in R using Windows (“Hex digits in character string” error)
+
+Mình gặp dòng này khi phải ghi full path.
+Nếu copy y nguyên từ Windows thì sẽ thế này:
+
+`C:\Users\KimLoai\Documents\R project\textMining\ielts-vocab\data`
+
+và sẽ báo lỗi như trên.
+
+Để không bị báo lỗi, thay `\` bằng `/`, như sau:
+
+`C:/Users/KimLoai/Documents/R project/textMining/ielts-vocab/data
+
+Đọc thêm [tại đây](https://stackoverflow.com/questions/8425409/file-path-issues-in-r-using-windows-hex-digits-in-character-string-error)
+
+# Error: Must extract column with a single valid subscript. x Subscript `var` has size 268 but must be size 1. Code and dataframe include
+
+dữ liệu đầu vào của mình là một list các dataframe không có cột tiêu đề.
+Ngớ ngẩn sao, các dataframe đầu tiên trong cái list đó có chữ đầu tiên là chữ i. 
+Vì dùng lapply() để import một lúc nhiều dataframe nên mình không thiệt lập `header = F` được.
+Xui thế nào, cái dataframe đầu tiên trong cái list lại có dòng đầu tiên chỉ có duy nhất một kí tự `i`.
+Thế là R dùng cái kí tự i này làm tiêu đề cho cột luôn.
+Mình ngáo ngơ, chỉ xem một cái df đầu tiên trong cái list ấy nên tưởng cái dataframe nào tiêu đề của cột cũng là i.
+Vậy là mình cứ dùng `df$i` ở tất cả mọi nơi.
+Kết là báo lỗi như trên.
+
+**UPDATE**
+
+http://rstudio-pubs-static.s3.amazonaws.com/9496_124e01082df74acd80a55674068b8756.html
+
+ThựC ra là vẫn set header = F được, chỉ là mình đã ghi sai code thôi.
+
+
