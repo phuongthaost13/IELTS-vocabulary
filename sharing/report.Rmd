@@ -10,8 +10,6 @@ knitr::opts_chunk$set(echo = FALSE, warning = F, message = F)
 knitr::opts_knit$set(root.dir = normalizePath(".."))
 ```
 
-(Ngắn gọn cho bạn nào lười đọc): File Excel từ vựng tiếng Anh xuất hiện trong sách Cambridge English IELTS từ cuốn 10 - 15. Xem từng ảnh để biết thêm về các tiêu chí lọc từ của mình và cách sử dụng file từ vựng.
-
 ```{r library, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(hrbrthemes)
@@ -52,7 +50,36 @@ ques_sample <- read.csv(here::here('output', 'ques_sample.csv'))
 
 ```
 
-```{r num-words-no-rep}
+# Giới thiệu qua về dữ liệu
+
+Mình sử dụng R để thực hiện việc khai thác dữ liệu văn bản.
+
+Cambridge English IELTS là bộ sách luyện thi IELTS chính thức tương tự như đề thi IELTS thật. 
+Đây là sách có bản quyền và vì không có được nguồn sách hợp pháp nên mình phải sử dụng các file sách được chia sẻ lậu trên internet. 
+Sách này được chia sẻ ở hai dạng: một là PDF chữ và hai là PDF dạng scan hình ảnh. 
+Trong số 6 cuốn sách mình sử dụng (từ Cambridge English IELTS 10 - 15), chỉ duy nhất cuốn Cambridge 11 là ở dạng PDF chữ. 
+Quá trình chuyển từ PDF chữ thành text để khai thác dữ liệu khá đơn giản và chính xác. 
+Các cuốn sách còn lại đều phải đưa vào R để thực hiện việc chuyển file hình ảnh thành text, độ chính xác thấp hơn do chất lượng hình ảnh nhiều chỗ không tốt.
+
+Phần dữ liệu được khai thác trong sách chỉ bao gồm đề thi của phần IELTS Academic, không bao gồm phần IELTS General, listening transcript và answer keys. 
+
+# Mục đích thực hiện
+
+Mục đích của mình khi thực hiện việc khai thác dữ liệu chữ từ sách nhằm lọc ra những từ vựng có khả năng xuất hiện cao nhất trong đề thi IELTS. 
+Từ đó, giúp định hướng cho việc học từ vựng, bắt đầu từ những từ vựng thông dụng nhất.
+
+# Khai thác dữ liệu văn bản
+
+*Một số lưu ý:
+
+- Trong bài viết, mình sẽ có sự phân biệt giữa từ vựng (vocabulary) và từ (word). 
+
+- Trong R có tích hợp một tập dữ liệu những từ vựng thông dụng nhất trong tiếng Anh gọi là stopwords (bao gồm 1149 từ). 
+Đây là những từ vựng bắt buộc phải học nên trong các phân tích của mình, từ vựng loại này đều đã được loại ra hoặc nếu có mình sẽ có chú thích riêng trong từng biểu đồ.
+
+- Từ thời điểm này trở về sau, mình sẽ sử dụng từ "Cam" để viết tắt thay cho "Cambridge English IELTS".
+
+```{r num-vocabs}
 ggplot(combined_df, aes(x = source)) +
   
   geom_bar(fill = 'light blue', col = 'light blue', alpha = 0.5) +
@@ -85,19 +112,11 @@ ggplot(combined_df, aes(x = source)) +
   
 ```
 
-Nói một chút về nguồn sách mình sử dụng.
-Sách Cambridge English IELTS là sách có bản quyền nên nguồn sách có trên mạng tất cả đều là sách lậu.
-Sách này được chia sẻ ở hai dạng: một là PDF chữ và hai là PDF dạng scan hình ảnh.
-Trong số 6 cuốn sách mình sử dụng, chỉ duy nhất cuốn Cambridge 11 là ở dạng PDF chữ.
-Quá trình chuyển từ PDF chữ thành text để khai thác dữ liệu khá đơn giản và chính xác.
-Các cuốn sách còn lại đều phải đưa vào R để thực hiện việc chuyển file hình ảnh thành text, độ chính xác thấp hơn do chất lượng hình ảnh nhiều chỗ không tốt.
+Số lượng từ vựng xuất hiện trong sách Cam qua các năm xấp xỉ bằng nhau, riêng chỉ cuốn Cam 11 có lượng từ lớn hơn rất nhiều. 
+Có hai lí do để giải thích. Một là như mình đã đề cập, cuốn Cam 11 được chuyển từ PDF chữ nên độ chính xác cao hơn. 
+Lí do thứ hai đó là cuốn Cam 11 thực sự có lượng từ lớn hơn các cuốn khác.
 
-Biểu đồ ở ảnh bên cho thấy, số lượng từ vựng xuất hiện trong sách Cambdrige qua các năm xấp xỉ bằng nhau, riêng chỉ cuốn Cambridge 11 có lượng từ lớn hơn rất nhiều.
-Có hai lí do để giải thích. 
-Một là như mình đã đề cập, cuốn 11 được chuyên từ PDF chữ nên độ chính xác cao hơn.
-Hoặc một lí do khác đó là cuốn 11 thực sự có lượng từ lớn hơn các cuốn khác.
-
-```{r num-words-with-rep}
+```{r num-words}
 combined_df %>% 
   group_by(source) %>% 
   summarise(n = sum(freq)) %>% 
@@ -136,8 +155,10 @@ ggplot(aes(x = source, y = n)) +
       
 ```
 
-Tuy nhiên, khi khai thác ở một khía cạnh khác là tổng số từ (tức các từ vựng có lặp lại) thì lượng từ ở tất cả các cuốn sách đều ngang bằng nhau.
-Điều này giúp mình tin rằng cuốn 11 thực sự có lượng từ vựng nhiều hơn các cuốn khác, chứ không phải vì lí do R đã thiếu chính xác trong việc xử lí file hình ảnh thành text.
+Để kiểm định cho hai giả thuyết nêu trên, mình lập biểu đồ tổng số lượng từ xuất hiện trong sách. 
+Bởi vì đề thi IELTS có thời lượng làm bài giống nhau nên mình suy luận rằng chúng cũng sẽ có lượng từ tương đương nhau. 
+Nếu giả thuyết thứ nhất là đúng, thì tổng số từ của cuốn Cam 11 cũng phải cao hơn các cuốn Cam khác. 
+Tuy nhiên, nhìn vào biểu đồ, số lượng từ của các cuốn đều xấp xỉ nhau nên mình tin rằng Cam 11 thực sự có lượng từ vựng nhiều hơn các cuốn khác chứ không phải do R đã thiếu chính xác trong việc xử lí file hình ảnh thành text.
 
 ```{r stopwords-normalwords}
 ggplot(combined_df, aes(x = word_type, group = source)) +
@@ -185,13 +206,8 @@ ggplot(combined_df, aes(x = word_type, group = source)) +
                       labels = c('Thông thường', 'Thông dụng')) 
 ```
 
-R có tích hợp một tập dữ liệu các từ thông dụng trong tiếng Anh (gọi là stopwords), trong đó bao gồm 1149 từ.
-Nếu mình không có chú thích thì tất cả các đồ thị mà mình thực hiện đều đã loại bỏ các từ thông dụng này bởi đây là những từ mà bạn chắc chắn phải học.
-Biểu đồ cột bên cho ta thấy, số lượng từ vựng thuộc nhóm từ thông dụng chỉ chiếm một phần nhỏ trong bộ từ vựng sử dụng cho bài thi IELTS (khoảng 14%).
-Có 533 từ vựng xuất hiện đồng thời trong cả 6 cuốn Cambridge IELTS (chiếm khoảng 15% tổng số từ).
-Nếu cộng cả hai loại trên thì cũng chỉ mới được khoảng 29% số lượng từ vựng của IELTS, một con số rất thấp.
-
-Nếu bạn có một vốn từ vựng ít thì mình nghĩ con số 29% này chính là điểm bạn nên bắt đầu vì đây là những từ rất rất thông dụng.
+Số lượng từ vựng thuộc nhóm từ thông dụng (stopwords) chỉ chiếm một phần nhỏ trong bộ từ vựng sử dụng cho bài thi IELTS (khoảng 14%), một con số rất thấp. 
+Nếu bạn có một vốn từ vựng ít thì mình nghĩ con số 14% này chính là điểm bạn nên bắt đầu vì đây là những từ rất rất thông dụng.
 
 ```{r data-distribution}
 combined_df %>% 
@@ -226,27 +242,23 @@ combined_df %>%
         plot.caption = element_text( hjust = 0))             #left align
 ```
 
-Mục đích của mình khi thực hiện việc khai thác dữ liệu chữ từ sách chính là có thể học số lượng tối thiểu từ vựng có khả năng xuất hiện tối đa trong bài thi IELTS.
-Hay nói ngắn gọn chính là học những từ có khả năng xuất hiện cao nhất.
-
-Trước tiên, mình vẽ các histogram để xem xét sự phân bố của dữ liệu.
+Mình dùng các histogram để xem xét sự phân bố của dữ liệu. 
 Ở đây, mình muốn biết phân phối tần suất xuất hiện của từ vựng trong từng cuốn sách. 
 Cần phải nói thêm, trong tập dữ liệu sử dụng cho biểu đồ này, mình đã loại bỏ một số từ thường xuyên xuất hiện trong câu hỏi của đề thi (ví dụ từ questions xuất hiện đến 205 lần).
-Việc loại bỏ này được thực hiện là do khi xem xét tần suất xuất hiện của từ vựng theo giá trị từ cao xuống thấp, mình phát hiện một số từ vựng có tần suất xuất hiện cao hơn hẳn các từ khác.
-Để ý thì thấy rằng các từ này đều là những từ hay xuất hiện trong câu hỏi của đề thi.
-Mình coi các từ này là những outlier và loại chúng ra để tránh ảnh hưởng đến tổng quan chung của biểu đồ.
+Việc loại bỏ này được thực hiện là do khi xem xét tần suất xuất hiện của từ vựng theo giá trị từ cao xuống thấp, mình phát hiện một số từ vựng có tần suất xuất hiện cao hơn hẳn các từ khác. 
+Để ý thì thấy rằng các từ này đều là những từ hay xuất hiện trong câu hỏi của đề thi. 
+Mình coi các từ này là những outlier và loại chúng ra để tránh ảnh hưởng đến tổng quan chung của biểu đồ. 
 
-Khái niệm tần suất và số lượng mình chú thích trên biểu đồ sẽ rất dễ gây nhầm lẫn nên mình muốn giải thích rõ hơn.
+Khái niệm tần suất (frequency) và số lượng (count) chú thích trên biểu đồ sẽ rất dễ gây nhầm lẫn nên mình muốn giải thích rõ hơn. 
 Về giá trị tần suất, ví dụ, nhìn trên biểu đồ, bạn sẽ thấy có một cột rất cao. 
-Cột đó có giá trị tần suất là 2.
-Nghĩa là, trong mỗi cuốn Cambridge, số lượng từ vựng xuất hiện 2 lần trong sách là rất nhiều (có trên 1500 từ như vậy).
-Có rất ít từ xuất hiện trên 25 và vì số lượng rất ít nên bạn gần như không thể thấy nó được biểu diễn trên biểu đồ.
-Vậy tại sao mình lại biết là có từ xuất hiện trên 25 lần mặc dù nó không được thể hiện trên biểu đồ?
-Đó là vì, ở trục x, giá trị tần suất được thể hiện đến con số 150.
+Cột đó có giá trị tần suất là 2. Nghĩa là, trong mỗi cuốn Cambridge, số lượng từ vựng xuất hiện 2 lần trong sách là rất nhiều (có trên 1500 từ như vậy). 
+Có rất ít từ xuất hiện trên 25 lần và vì số lượng rất ít nên bạn gần như không thể thấy nó được biểu diễn trên biểu đồ. 
+Vậy tại sao mình lại biết là có từ xuất hiện trên 25 lần mặc dù nó không được thể hiện trên biểu đồ? 
+Đó là vì, ở trục x, giá trị tần suất được thể hiện đến con số 150. 
 Tức là phải có một từ nào đó xuất hiện lớn hơn 150 lần nhưng vì số lượng rất ít nên gần như là không thấy.
 
 Để thể hiện rõ hơn, mình sẽ chia biểu đồ và phóng to vào từng vùng của biều đồ để nhìn số liệu được chính xác hơn. 
-Có thể thấy từ biểu đồ chung thì hầu hết các từ vựng đều nằm ở vùng có tần suất nhỏ hơn 25.
+Có thể thấy từ biểu đồ chung thì hầu hết các từ vựng đều nằm ở vùng có tần suất nhỏ hơn 25. 
 Do vậy, hai vùng được chia bao gồm: từ 0 - 25 và lớn hơn 25.
 
 ```{r greater-25}
@@ -283,12 +295,9 @@ combined_df %>%
         plot.caption = element_text( hjust = 0))             #left align
 ```
 
-Trước tiên, chúng ta sẽ xem xét những từ vựng có tuần suất xuất hiện trên 25 lần trong một cuốn sách Cambridge.
-Cần biết là mỗi cuốn Cambridge bao gồm 4 test.
-Xuất hiện 25 lần tức là trung bình mỗi bài test từ sẽ xuất hiện 6 lần.
-Số lượng từ nằm trong nhóm này dù không nhiều nhưng là những từ nhất định phải biết bởi chúng rất thường xuất hiện trong bài thi IELTS.
-Bạn cũng có thể thấy là số lượng từ và phân phối của từ giữa các cuốn sách rất tương đồng nhau (ở cả biểu đồ này và những biểu đồ trước đó).
-Điều này cho thấy, sách thực sự được làm rất chất lượng.
+Trước tiên, chúng ta sẽ xem xét những từ vựng có tuần suất xuất hiện trên 25 lần trong một cuốn sách Cam. 
+Cần biết là mỗi cuốn Cam bao gồm 4 test. Xuất hiện 25 lần tức là trung bình mỗi bài test từ sẽ xuất hiện 6 lần. 
+Số lượng từ nằm trong nhóm này dù không nhiều nhưng là những từ nhất định phải biết bởi chúng rất thường xuất hiện trong bài thi IELTS. 
 
 ```{r less-25}
 combined_df %>% 
@@ -325,9 +334,9 @@ combined_df %>%
 ```
 
 
-Ở đây, các biều đồ phân phối khá tương đồng nhau, chỉ riêng cuốn Cambridge 11 là có chút khác biệt.
-Mục đích của mình khi vẽ biểu đồ phân phối dữ liệu cho từng cuốn riêng biệt là nhằm xác định liệu có sự khác nhau hay không.
-Nếu có khác, mình sẽ phải thực hiện việc lọc dữ liệu cho từng cuốn riêng biệt.
+Với tần suất dưới 25 lần. Ở đây, các biều đồ phân phối khá tương đồng nhau, chỉ riêng cuốn Cambridge 11 là có chút khác biệt. 
+Mục đích của mình khi vẽ biểu đồ phân phối dữ liệu cho từng cuốn riêng biệt là nhằm xác định liệu có sự khác nhau hay không. 
+Nếu có khác, mình sẽ phải thực hiện việc lọc dữ liệu cho từng cuốn riêng biệt. 
 Nhưng vì sự tương đồng là rất lớn nên mình sẽ gộp chung toàn bộ từ vựng của 6 cuốn và thực hiện việc lọc dựa trên một tập dữ liệu lớn.
 
 
@@ -414,7 +423,7 @@ Nếu quay lại các biểu đồ trước, khi phân tích riêng từng cuố
 Mình đã hi vọng rằng dù tần suất xuất hiện là 2 nhưng nếu các từ trùng lặp từ cuốn này sang cuốn khác thì vẫn được xem là từ thông dụng.
 Nhưng không, bọn nó chỉ xuất hiện đúng 2 lần thật.
 Nếu chỉ nhìn bằng mắt thường, chỉ riêng ở giá trị tần suất 1 và 2 đã chiếm tới gần 4000, tức chiếm tới gần 45% tổng số từ vựng (từ vựng trong 6 cuốn sách là 8703 từ, không bao gồm từ thông dụng).
-Và nếu giả sử, một từ được coi là thông dụng khi nó xuất hiện ít nhất một lần trong một bài test, tức là 24 lần trong 6 cuốn sách thì lượng từ vựng có tần suất nhỏ hơn 24 chiếm khoảng 90% tổng lượng từ :((
+Và nếu giả sử, một từ được coi là có tần suất cao khi nó xuất hiện ít nhất một lần trong một bài test, tức là 24 lần thì từ loại này chỉ chiếm khoảng 10% lượng từ vựng.
 
 Tóm lại là cố gắng trau dồi từ vựng đi các bạn ạ. 
 Không ăn gian được đâu :))
@@ -461,20 +470,24 @@ ggplot(piechart, aes(x ="", y = value, fill = word)) +
 Tin tốt lành cuối cùng.
 Mặc dù chỉ chiếm khoảng 10% nhưng những từ vựng thông dụng chiếm tới 50% tổng lượng từ xuất hiện.
 
-Mặc dù kết quả không như mong đợi nhưng dù gì cũng đã chạy đông chạy tây được đến đây nên mình vẫn tạo một bảng từ vựng các từ xuất hiện trong sách Cambridge English IELTS 10 - 15.
-Hi vọng nó sẽ có ích nếu bạn cần một bảng từ vựng để sử dụng cho Anki chẳng hạn.
-
-File từ vựng sẽ bao gồm:
-
-- stopwords: 1149 từ vựng thông dụng trong tiếng Anh
-
-- greater than 1: các từ vựng có tần suất xuất hiện trung bình từ 1 lần trở lên trong mỗi cuốn sách
-
-- less than 1: các từ vựng có tần suất xuất hiện trung bình dưới 1 lần trong mỗi cuốn sách
-
 Tổng số từ vựng:  8703  
 - freq >= 1: 764
 - freq < 1: 7889
 - ques_sample: 51
 stopwords: 1149
+
+# Kết luận 
+
+“Nội dung của bài thi IELTS phản ánh mọi tình huống, không thiên vị và công bằng đối với tất cả các thí sinh từ mọi hoàn cảnh” (How IELTS is developed). 
+Qua việc khai thác dữ liệu chữ từ bộ đề thi thử IELTS chính thức của Cambridge, mình nghĩ hội đồng xây dựng đề thi đã thực hiện rất đúng tiêu chí trên. 
+Từ vựng qua các năm được thay đổi rất nhiều để đáp ứng tiêu chí phủ rộng mọi lĩnh vực nhưng vẫn thống nhất về lượng từ xuất hiện để đảm bảo bài thi được xây dựng thống nhất.
+
+# Điểm chưa hoàn chỉnh của bài phân tích
+
+Mình không có nhiều kiến thức về xác suất và thống kê nên mình biết các tiêu chí lọc từ của mình còn rất lôm côm và không có cơ sở toán học để chứng minh. 
+Rất mong các bạn độc giả có kiến thức chuyên môn có thể góp ý để hoàn thiện hơn cho bài phân tích này. 
+
+[Link Github](https://github.com/phuongthaost13/IELTS-vocabulary)
+
+[Link từ vựng](https://docs.google.com/spreadsheets/d/1DrZvS7YqJLdIa37VsS67NdaicgWKACrJ0g62hWxMSK0/edit?fbclid=IwAR1iTRohwtjdgEg4xBC5vSLJP4VW22gCNBRRoSgyaLAZC2KV3Y4YqePDE0M#gid=690174637)
 
