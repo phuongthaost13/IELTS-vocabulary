@@ -31,7 +31,7 @@ for (i in 1:len_file) {
   listofData <- c(listofData, list(to_export))
 }
 
-# Loại bỏ các từ vô nghĩa (không phải tiếng Anh) và xuất file excel
+# Loại bỏ các từ vô nghĩa (không phải tiếng Anh) 
 len_listofData <- length(listofData)
 for (i in 1:len_listofData) {
   a <- listofData[[i]]
