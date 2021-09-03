@@ -103,10 +103,6 @@ ggplot(combined_df, aes(x = source)) +
   
   theme(#grid elements
       axis.ticks = element_blank(),          #strip axis ticks
-      
-      #since theme_minimal() already strips axis lines, 
-      #we don't need to do that again
-      
       axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
       axis.title.y = element_text(hjust = 1, face = 'bold'))
   
@@ -145,10 +141,6 @@ ggplot(aes(x = source, y = n)) +
   
   theme(
       axis.ticks = element_blank(),          #strip axis ticks
-      
-      #since theme_minimal() already strips axis lines, 
-      #we don't need to do that again
-  
       axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
       axis.title.y = element_text(hjust = 1, face = 'bold'),
       plot.caption = element_text( hjust = 0))             #left align
@@ -194,13 +186,9 @@ ggplot(combined_df, aes(x = word_type, group = source)) +
         legend.title = element_text(face = 'bold'),
         axis.text.x = element_blank(),
         axis.ticks = element_blank(),          #strip axis ticks
-      
-      #since theme_minimal() already strips axis lines, 
-      #we don't need to do that again
-  
-      axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
-      axis.title.y = element_text(hjust = 1, face = 'bold'),
-      plot.caption = element_text( hjust = 0))+
+        axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
+        axis.title.y = element_text(hjust = 1, face = 'bold'),
+        plot.caption = element_text( hjust = 0))+
   
   scale_fill_discrete(name = 'Loại từ',
                       labels = c('Thông thường', 'Thông dụng')) 
@@ -230,13 +218,8 @@ combined_df %>%
   
   theme_minimal() +
   
-  theme(legend.position = 'bottom',
-        legend.title = element_text(face = 'bold'),
+  theme(
         axis.ticks = element_blank(),          #strip axis ticks
-      
-        #since theme_minimal() already strips axis lines, 
-        #we don't need to do that again
-  
         axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
         axis.title.y = element_text(hjust = 1, face = 'bold'),
         plot.caption = element_text( hjust = 0))             #left align
@@ -283,13 +266,8 @@ combined_df %>%
   
   theme_minimal() +
   
-  theme(legend.position = 'bottom',
-        legend.title = element_text(face = 'bold'),
+  theme(
         axis.ticks = element_blank(),          #strip axis ticks
-      
-        #since theme_minimal() already strips axis lines, 
-        #we don't need to do that again
-  
         axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
         axis.title.y = element_text(hjust = 1, face = 'bold'),
         plot.caption = element_text( hjust = 0))             #left align
@@ -321,13 +299,8 @@ combined_df %>%
   
   theme_minimal() +
   
-  theme(legend.position = 'bottom',
-        legend.title = element_text(face = 'bold'),
+  theme(
         axis.ticks = element_blank(),          #strip axis ticks
-      
-        #since theme_minimal() already strips axis lines, 
-        #we don't need to do that again
-  
         axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
         axis.title.y = element_text(hjust = 1, face = 'bold'),
         plot.caption = element_text( hjust = 0))             #left align
@@ -362,13 +335,8 @@ combined_df %>%
   
   theme_minimal() +
   
-  theme(legend.position = 'bottom',
-        legend.title = element_text(face = 'bold'),
-        axis.ticks = element_blank(),          #strip axis ticks
-      
-        #since theme_minimal() already strips axis lines, 
-        #we don't need to do that again
-  
+  theme(
+        axis.ticks = element_blank(),          #strip axis tick
         axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
         axis.title.y = element_text(hjust = 1, face = 'bold'),
         plot.caption = element_text( hjust = 0))             #left align
@@ -409,10 +377,6 @@ combined_df %>%
   theme(legend.position = 'bottom',
         legend.title = element_text(face = 'bold'),
         axis.ticks = element_blank(),          #strip axis ticks
-      
-        #since theme_minimal() already strips axis lines, 
-        #we don't need to do that again
-  
         axis.title.x = element_text(hjust = 1, vjust = 0, face = 'bold'),
         axis.title.y = element_text(hjust = 1, face = 'bold'),
         plot.caption = element_text( hjust = 0))             #left align
