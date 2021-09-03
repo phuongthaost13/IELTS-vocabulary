@@ -37,15 +37,3 @@ for (i in 1:len_myFiles) {
   output <- remove_Punc(txt)
   writeLines(output, paste("cam", i+9, ".txt", sep = ""))
 }
-
-
-#tx <- "nC__.itwas.modified.by.biologists.in.the.early.twentieth.century..nD__.itwas.based.on.many.years.of.research.n28.The.humpback.whale.caught.off.Vancouver.Island.is.mentioned.because.of.nA..
-#the.exceptional.size.of.its.body..nB.the.way.it.exem__plifies."
-#output <- gsub(".n", " ", tx, fixed = T)
-#newf <- gsub("[.n-__]", " ", tx, fixed = T)
-#newf
-#writeLines(output, "output/te.txt")
-#newf <- remove_Punc(tx)
-
-cm <- "a dog can be B Dog"
-b <- gsub('[[:xdigit:]]', "", cm, fixed = T )
