@@ -26,7 +26,7 @@ và sẽ báo lỗi như trên.
 
 # Error: Must extract column with a single valid subscript. x Subscript `var` has size 268 but must be size 1. Code and dataframe include
 
-dữ liệu đầu vào của mình là một list các dataframe không có cột tiêu đề.
+Dữ liệu đầu vào của mình là một list các dataframe không có cột tiêu đề.
 Ngớ ngẩn sao, các dataframe đầu tiên trong cái list đó có chữ đầu tiên là chữ i. 
 Vì dùng lapply() để import một lúc nhiều dataframe nên mình không thiệt lập `header = F` được.
 Xui thế nào, cái dataframe đầu tiên trong cái list lại có dòng đầu tiên chỉ có duy nhất một kí tự `i`.
