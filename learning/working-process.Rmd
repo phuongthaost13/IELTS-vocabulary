@@ -28,7 +28,8 @@ cần nhận diện chữ trong file pdf dạng hình ảnh
 - `magick::image_read()`: không rõ là đễ làm gì, có vẻ là ghép tất cả các hình ảnh lại với nhau
 
 - `tesseract::ocr()`: extract text from an image. 
-Lúc dúng thằng này theo hướng dẫn trên gg thì lại theo code như sau `txt <- map(imgs, ocr)`.
+- 
+Lúc dùng thằng này theo hướng dẫn trên gg thì lại theo code như sau `txt <- map(imgs, ocr)`.
 Không rõ là tại sao lại dùng `map()` trong trường hợp này.
 
 ## Trích xuất hình ảnh, lọc text tốn quá nhiều bộ nhớ và thời gian
@@ -84,6 +85,8 @@ Mình sẽ lọc tất cả các từ có độ dài từ lớn hơn một con s
 Để xác định con số này, mình đã gg để tìm độ dài trung bình của từ tiếng Anh.
 Vô tình đọc được một câu trả lời trên [quora](https://www.quora.com/Whats-the-average-length-of-English-words) về spell check nên mình nghĩ biết đâu R cũng có công cụ để thực hiện và có thật
 
+`hunspell::hunspell_check()`
+
 
 ## Loại bỏ dấu câu ra khỏi văn bản (remove punctuation marks from string)
 
@@ -104,6 +107,7 @@ Sau khi kiểm tra thì sau đây là một số dạng dấu cần được lo�
 ## Tại sao phải sử dụng do.call(rbind) thay vì rbind()
 
 Hiện tại thì người ta đã dùng dplyr::bind_rows
+ 
 
 # 28082021: Ngày 3
 
@@ -171,7 +175,6 @@ Làm đến thời điểm này mình mới tìm được mục đích.
 Mục đích là làm sao cho số lượng từ mình phải học là ít nhất nhưng xác suất các từ đó xuất hiện trong bài thi IELTS là cao nhất. 
 
 Mình tìm được tỉ lệ của stopword xuất hiện (khoảng 14%), và 533 từ xuất hiện trong tất cả các cuốn từ Cambridge 10 - 15.
-Tính ra cả hai loại trên cộng lại cũng chỉ mới chiếm khoảng 29% tổng số lượng từ xuất hiện trong sách luyện IELTS Cambridge. 
 Như vậy là quá thấp.
 Giả sử mình muốn được 6.5 điểm.
 Vì mình không biết tính thế nào nên lại tiếp tục giả sử mình cần phải biết 75% tổng số lượng từ trong các sách Cambridge thì mới đạt được con số 6.5 điểm.
@@ -219,14 +222,4 @@ về một vấn đề gì đó.
 Trong trường hợp này thì giống như mình tự đánh lạc hướng mình.
 Do đó mình phải tìm cách học phương pháp tính để xác định binwidth,
 xác định, giá trị của cột y sao cho đồ thị phản ánh đúng thực tế nhất.
-
-
-
-
-
-
-
-
-
-
 
